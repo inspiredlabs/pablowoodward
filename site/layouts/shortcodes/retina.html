@@ -10,8 +10,9 @@
 	    {{ end */}}
 
 	  {{ if or (isset .Params "alt") (isset .Params "caption") }}alt="{{ if isset .Params "alt"}}{{ index .Params "alt"}}{{else}}{{ index .Params "caption" }}{{ end }}"{{ end }} />
-	  {{ if or (or (isset .Params "title") (isset .Params "caption")) (isset .Params "attr")}}
-	  <figcaption class="bg-transparent white-80 pa3 f5 lh-solid relative {{ .Get `bg-color` }}" style="top:-0.5em;">{{ if isset .Params "title" }}<!--bg-black-80-->
+	  {{/* if or (or (isset .Params "title") (isset .Params "caption")) (isset .Params "attr")}}
+	  <!--bg-black-80-->
+	  <figcaption class="bg-transparent white-80 pa3 f5 lh-solid relative {{ .Get `bg-color` }}" style="top:-0.5em;">{{ if isset .Params "title" }}
 	      <span class="">{{ index .Params "title" | markdownify }}</span>{{ end }}
 	      {{ if or (isset .Params "caption") (isset .Params "attr")}}<p>
 	      {{ index .Params "caption" }}
@@ -20,7 +21,7 @@
 	      {{ if isset .Params "attrlink"}}</span> {{ end }}
 	      </p> {{ end }} 
 	  </figcaption>
-	  {{ end }}
+	  {{ end */}}
 	</figure>
 </div>
 <!-- image -->

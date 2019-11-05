@@ -5,6 +5,10 @@ title: Reels
 icon: vimeo
 ---
 
+# Reels
+
+#### Showreel
+
 {{<retina
 	w-size="w-third w-50-ns w-third-m w-third-l"
 	src="img/2015G.jpg"
@@ -84,10 +88,8 @@ icon: vimeo
 
 <!--src-small="img/workshop-1x.jpg"-->
 
-# Reels
 
-#### Showreel  
-
+<script>/*
 <small>Fullscreen ⤴</small>
 
 ](https://vimeo.com/132351634)
@@ -133,3 +135,4 @@ icon: vimeo
 ](https://vimeo.com/125913669)
 
 <div class="video"><span class="video-height"></span><iframe src="https://player.vimeo.com/video/125913669" frameborder="0"></iframe></div>
+*/</script>

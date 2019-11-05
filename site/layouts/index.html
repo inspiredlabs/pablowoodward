@@ -133,8 +133,8 @@ article h4, article h5, article h6 {
 	  <div class="button-group button-group--cells ">
 	    {{ range .Pages.ByWeight }}
 	    {{ $current := .Params.Name | lower | urlize }}
-	    <button class="fl dib w-20 h3 h3-ns h3-m h3-l tc bn pointer glow overflow-x-hidden o-60 button bg-light-gray ma-auto " data-weight="{{ $current }}"><!--alert(getAttribute('data-weight')); data-weight={{/**/}} -->
-	    	<a href="#{{ .Params.Name | lower | urlize }}" class="link ttu near-black db w-100 pa2 pa2-ns pa2-m pa3-l h3 h3-ns h3-m h3-l ma-auto button-reset no-focus-ring">
+	    <button class="fl dib w-20 h3 h3-ns h3-m h3-l tc bn pointer glow pr0 pl0 overflow-x-hidden o-60 button bg-light-gray ma-auto " data-weight="{{ $current }}"><!--alert(getAttribute('data-weight')); data-weight={{/**/}} -->
+	    	<a href="#{{ .Params.Name | lower | urlize }}" class="link ttu near-black db w-100 pa2 pa2-ns pa2-m pa3-l pr0 pl0  overflow-x-hidden h3 h3-ns h3-m h3-l ma-auto button-reset no-focus-ring">
 		    	<svg class="db dib-l ma-auto v-mid" width="32" height="32" viewBox="0 0 128 128" alt="{{ .Params.Icon | lower | urlize }}"><!-- ml-auto mr-auto dib mt0 db-m mb2-m mt3-m dib-l mb0-l mt0-l -->
 		    	  <use xlink:href="#{{ .Params.Icon | lower | urlize }}"></use>
 		    	</svg>
