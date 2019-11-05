@@ -1,5 +1,5 @@
 ---
-weight: 3
+weight: 5
 name: contact
 title: Contact
 icon: call

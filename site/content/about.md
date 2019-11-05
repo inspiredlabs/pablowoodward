@@ -5,9 +5,14 @@ title: About
 icon: info
 ---
 
-<figure class="mb3">
-	<img alt="A photo of Pablo Woodward" class="" src="https://pablowoodward.com/images/JC1.jpg" /></img><!-- w4 h4 w5-ns h5-m h5-m h5-l h5-l br-100 -->
-</figure>
+{{<retina
+	w-size="w-third w-50-ns w-third-m w-third-l"
+	src="img/JC1.jpg"
+	title=""	
+	alt="A photo of Pablo Woodward"
+	bg-color="" >}}
+
+<!--src-small="img/JC1.jpg"-->
 
 ## Pablo&nbsp;Woodward
 ### UK Equity Member | AUS MEAA Member

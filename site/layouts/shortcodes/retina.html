@@ -1,0 +1,31 @@
+<!-- image -->
+<div class="w-100">
+	<figure class="{{ .Get `w-size` }} ma-auto inherit bg-inherit">
+	  <img class="b-lazy no-select w-100 ma0" src="data:image/gif,GIF89a,AAAAAAE"	    
+
+			data-src="{{ .Site.BaseURL }}{{ index .Params "src" }}"
+
+			{{/* if or (isset .Params "src-small") (isset .Params "src") }}
+	    	data-src="{{ .Site.BaseURL }}{{ if isset .Params "src-small"}}{{ index .Params "src-small"}}{{else}}|{{ .Site.BaseURL }}{{ index .Params "src" }}{{ end }}"
+	    {{ end */}}
+
+	  {{ if or (isset .Params "alt") (isset .Params "caption") }}alt="{{ if isset .Params "alt"}}{{ index .Params "alt"}}{{else}}{{ index .Params "caption" }}{{ end }}"{{ end }} />
+	  {{ if or (or (isset .Params "title") (isset .Params "caption")) (isset .Params "attr")}}
+	  <figcaption class="bg-transparent white-80 pa3 f5 lh-solid relative {{ .Get `bg-color` }}" style="top:-0.5em;">{{ if isset .Params "title" }}<!--bg-black-80-->
+	      <span class="">{{ index .Params "title" | markdownify }}</span>{{ end }}
+	      {{ if or (isset .Params "caption") (isset .Params "attr")}}<p>
+	      {{ index .Params "caption" }}
+	      {{ if isset .Params "attrlink"}}<span href="{{ index .Params "attrlink"}}">{{ end }}
+	          {{ index .Params "attr" }}
+	      {{ if isset .Params "attrlink"}}</span> {{ end }}
+	      </p> {{ end }} 
+	  </figcaption>
+	  {{ end }}
+	</figure>
+</div>
+<!-- image -->
+
+
+
+	
+ 
