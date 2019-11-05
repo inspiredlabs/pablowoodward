@@ -34,7 +34,7 @@ html, body{height:100%;width:100%;margin:0;padding:0;overflow:hidden;-webkit-bac
 }
 
 .button.is-selected {
-  background: #57005d; /* Tyrian (Royal Purple) */
+  background: white;
   opacity: 1;
 }
 
@@ -42,7 +42,7 @@ article p {
 	text-align: left;
 }
 
-article h3, article h4, article h5, article h6 {
+article h4, article h5, article h6 {
 	text-align: left;
 }
 
@@ -52,14 +52,14 @@ article h3, article h4, article h5, article h6 {
 </head>
 
 
-<body class="w-100 h-100 ma0 pa0 overflow-hidden backface-hidden no-clutter bg-magnolia baskerville">
+<body class="w-100 h-100 ma0 pa0 overflow-hidden backface-hidden no-clutter charcoal system">
 	{{ partial "svg.html" . }}
 	
 	{{/* partial "header.html" . */}}
-	<header class="pa0 ma0 h2 w-100 z-9999 antialias disable-scrolling absolute fixed lh-title white b bg-plum">
-		<h1 class="f5 ma0 fl tc w-100 w-50-l bg-plum pt2 pb2">{{ .Site.Title }}</h1>
-		<h2 class="f5 ma0 fl tc w-100 w-50-l bg-plum pt2 pb2">{{ .Description | default .Site.Params.SiteDescription }}</h2>		
-		<!--p class="white tc"></p-->
+	<header class="pa0 ma0 h2 w-100 z-9999 disable-scrolling absolute fixed lh-title bg-light-gray">
+		<h1 class="f5 ma0 fl tc w-100 w-50-l bg-light-gray pt2 pb2 fw7">{{ .Site.Title }}</h1>
+		<h2 class="f5 ma0 fl tc w-100 w-50-l bg-light-gray pt2 pb2 fw4">{{ .Description | default .Site.Params.SiteDescription }}</h2>		
+		<!--p class="near-black tc"></p-->
 	</header>
 	
 	<!-- The big featured header on the homepage, with the site logo and description -->
@@ -81,7 +81,7 @@ article h3, article h4, article h5, article h6 {
 	
 	</header>-->
 	
-	<div id=carousel class="carousel fixed h-100 w-100 top-0 left-0 tyrian">
+	<div id=carousel class="carousel fixed h-100 w-100 top-0 left-0">
 		{{ $current := .Params.Name }}
 		{{ range .Pages.ByWeight }}
 		
@@ -127,14 +127,14 @@ article h3, article h4, article h5, article h6 {
 	</div>
 	
 	<!-- https://gohugo.io/templates/pagination/ -->	
-	<nav class="system button-row pa0 bn ma0 h3 h3-ns h3-m h3-l w-100 bottom-0 z-999 no-clutter antialias bg-plum disable-scrolling absolute fixed">
+	<nav class="system button-row pa0 bn ma0 h3 h3-ns h3-m h3-l w-100 bottom-0 z-999 no-clutter bg-light-gray disable-scrolling absolute fixed">
 	  <div class="button-group button-group--cells ">
 	    {{ range .Pages.ByWeight }}
 	    {{ $current := .Params.Name | lower | urlize }}
-	    <button class="fl dib w-third h3 h3-ns h3-m h3-l tc bn pointer glow overflow-x-hidden o-60 button bg-plum ma-auto " data-weight="{{ $current }}"><!--alert(getAttribute('data-weight')); data-weight={{/**/}} -->
-	    	<a href="#{{ .Params.Name | lower | urlize }}" class="link ttu white db w-100 pa2 pa2-ns pa2-m pa3-l h3 h3-ns h3-m h3-l ma-auto button-reset no-focus-ring">
-		    	<svg class="db dib-l ma-auto v-mid" width="32" height="32" viewBox="0 0 128 128" alt="{{ .Params.Name | lower | urlize }}"><!-- ml-auto mr-auto dib mt0 db-m mb2-m mt3-m dib-l mb0-l mt0-l -->
-		    	  <use xlink:href="#{{ .Params.Name | lower | urlize }}"></use>
+	    <button class="fl dib w-third h3 h3-ns h3-m h3-l tc bn pointer glow overflow-x-hidden o-60 button bg-light-gray ma-auto " data-weight="{{ $current }}"><!--alert(getAttribute('data-weight')); data-weight={{/**/}} -->
+	    	<a href="#{{ .Params.Name | lower | urlize }}" class="link ttu near-black db w-100 pa2 pa2-ns pa2-m pa3-l h3 h3-ns h3-m h3-l ma-auto button-reset no-focus-ring">
+		    	<svg class="db dib-l ma-auto v-mid" width="32" height="32" viewBox="0 0 128 128" alt="{{ .Params.Icon | lower | urlize }}"><!-- ml-auto mr-auto dib mt0 db-m mb2-m mt3-m dib-l mb0-l mt0-l -->
+		    	  <use xlink:href="#{{ .Params.Icon | lower | urlize }}"></use>
 		    	</svg>
 		    	<span>{{ .Params.Name }}</span><!-- class="debug relative underline link top-4" -->
 	    	</a>
