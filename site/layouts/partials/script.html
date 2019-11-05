@@ -29,8 +29,9 @@ removeIOSRubberEffect(document.querySelector(".scrollable"));</script>
 <!-- Lazyload docs: https://flickity.metafizzy.co/options.html -->
 <script>		
 
-function retinaBounce() {			
-	setTimeout(function(){ bLazy.revalidate(); }, 120);
+function retinaBounce() {
+	var arbitraryNumber = Math.floor((Math.random()*1000) + 1);	
+	setTimeout(function(){ bLazy.revalidate(); }, arbitraryNumber);
 };
 			
 function initGroup() {
@@ -64,20 +65,18 @@ var flkty = new Flickity( carousel, {
     		//alert('empty');
     		initGroup();
     		return;
-    	} 
+    	}//if
 
     	// MATCH or not?
     	for (var i=0; i<list.length; i++) {
     		let listItem = list[i].getAttribute('data-weight');  		    		
     		
     		if (uri !== listItem) {	  		    		
-
 	    		//populated correctly, but not yet = move on
 	    		//DEBUG alert('not:' + listItem); //DEBUG
-	    		
 	    		//populated wrong = sanitise
+
 	    		//DEBUG alert(uri); //DEBUG
-	    		
 	    		
     		} else if (uri == listItem) {
 	    		//Store
@@ -86,11 +85,10 @@ var flkty = new Flickity( carousel, {
     			init.classList.add('is-selected');
     		} else {
     			//DEBUG alert(uri);//DEBUG
-    			
     			// 2047-06112019
     			removeHash();
     			initGroup();
-    		} retinaBounce();
+    		}//if
     		
     	}//for
     }//ready
@@ -129,15 +127,19 @@ flkty.on('select', function() {
     var previousSelectedButton = buttonGroup.querySelector('.is-selected');
     var selectedButton = buttonGroup.children[flkty.selectedIndex];
     previousSelectedButton.classList.remove('is-selected');
-    selectedButton.classList.add('is-selected');    
+    selectedButton.classList.add('is-selected');
+
+    // revalidate bLazy
+    retinaBounce(); 
 });
 buttonGroup.addEventListener('click', function(event) {
     if (!matchesSelector(event.target, '.button')) {
-        return;
+      return;
     }
     var index = buttons.indexOf(event.target);
     // isInstant: true,
     flkty.select(index, false, true);
+
     // revalidate bLazy
     retinaBounce(); 
 });
@@ -153,6 +155,7 @@ buttonGroup.addEventListener('click', function(event) {
 	})();
 	
 	(function(){
-		setTimeout(function(){ bLazy.revalidate(); }, 120);
+		// revalidate bLazy
+		retinaBounce(); 
 	})();
 </script> 		    	
