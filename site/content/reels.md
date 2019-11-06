@@ -7,106 +7,69 @@ icon: vimeo
 
 # Reels
 
-#### Showreel
+<div id="online-status" class="online">
+<div class="cf f4">
+<table class="fl tl w-100 w-50-ns mb5 collapse">
+	<tbody>
+	<tr class="">
+    <td class="gray fw5 pl2 w-50 w-25-ns hover-bg-near-white transition">
+      <a class="solid" target="_blank" href="https://vimeo.com/132351634">
+      <h4>Showreel<br></h4>
+      <p><small>Fullscreen&nbsp;⤴</small></p>
+      </a>
+      <iframe src="https://player.vimeo.com/video/132351634" frameborder="0"></iframe>
+    </td>
+    <td class="gray fw5 pl2 w-50 w-25-ns hover-bg-near-white transition">
+      <a class="solid" target="_blank" href="https://vimeo.com/131985127">
+      <h4>Voice<br></h4>
+      <p><small>Fullscreen&nbsp;⤴</small></p>
+      </a>
+      <iframe src="https://player.vimeo.com/video/131985127" frameborder="0"></iframe>
+    </td>
+	</tr>
+	</tbody>
+</table>
 
-{{<retina
-	w-size="w-third w-50-ns w-third-m w-third-l"
-	src="img/dance-2x.jpg"	
-	alt="Pablo Woodward acting."
-	bg-color="" >}}
+<table class="fl tl w-100 w-50-ns mb5 collapse">
+	<tbody>
+		<tr class="">
+			<td class="gray fw5 pl2 w-50 w-25-ns hover-bg-near-white transition">
+        <a class="solid" target="_blank" href="https://vimeo.com/223523621">
+        <h4>Dance<br></h4>
+        <p><small>Fullscreen&nbsp;⤴</small></p>
+        </a>
+        <iframe src="https://player.vimeo.com/video/223523621" frameborder="0"></iframe>
+      </td>
+      <td class="gray fw5 pl2 w-50 w-25-ns hover-bg-near-white transition">
+        <a class="solid" target="_blank" href="https://vimeo.com/223522722">
+        <h4>Workshop<br></h4>
+        <p><small>Fullscreen&nbsp;⤴</small></p>
+        </a>
+        <iframe src="https://player.vimeo.com/video/223522722" frameborder="0"></iframe>
+      </td>
+		</tr>
+	</tbody>
+</table>
 
-<!--src-small="img/dance-1x.jpg"	-->
-
-{{<retina
-	w-size="w-third w-50-ns w-third-m w-third-l"
-	src="img/egg-2x.jpg"
-	alt="Pablo Woodward acting."
-	bg-color="" >}}
-
-<!--src-small="img/egg-1x.jpg"	-->
-
-{{<retina
-	w-size="w-third w-50-ns w-third-m w-third-l"
-	src="img/improv-2x.jpg"
-	alt="Pablo Woodward acting."
-	bg-color="" >}}
-
-<!--src-small="img/improv-1x.jpg"	-->	
-
-{{<retina
-	w-size="w-third w-50-ns w-third-m w-third-l"
-	src="img/showreel-2x.jpg"	
-	alt="Pablo Woodward acting."
-	bg-color="" >}}
-
-<!--src-small="img/showreel-1x.jpg"-->
-
-{{<retina
-	w-size="w-third w-50-ns w-third-m w-third-l"
-	src="img/voice-2x.jpg"	
-	alt="Pablo Woodward acting."
-	bg-color="" >}}
-<!--src-small="img/voice-1x.jpg"-->
-
-
-{{<retina
-	w-size="w-third w-50-ns w-third-m w-third-l"
-	src="img/workshop-2x.jpg"
-	alt="Pablo Woodward acting."
-	bg-color="" >}}
-
-<!--src-small="img/workshop-1x.jpg"-->
-
-{{<retina
-	w-size="w-third w-50-ns w-third-m w-third-l"
-	src="img/bunny-catsuit_05.jpg"
-	alt="Pablo Woodward acting."
-	bg-color="" >}}
-
-<script>/*
-<small>Fullscreen ⤴</small>
-
-](https://vimeo.com/132351634)
-
-<div class="video"><span class="video-height"></span><iframe src="https://player.vimeo.com/video/132351634" frameborder="0"></iframe></div>
-
-#### Voice  
-
-<small>Fullscreen ⤴</small>
-
-](https://vimeo.com/131985127)
-
-<div class="video"><span class="video-height"></span><iframe src="https://player.vimeo.com/video/131985127" frameborder="0"></iframe></div>
-
-#### Dance  
-
-<small>Fullscreen ⤴</small>
-
-](https://vimeo.com/223523621)
-
-<div class="video"><span class="video-height"></span><iframe src="https://player.vimeo.com/video/223523621" frameborder="0"></iframe></div>
-
-#### Workshop  
-
-<small>Fullscreen ⤴</small>
-
-](https://vimeo.com/223522722)
-
-<div class="video"><span class="video-height"></span><iframe src="https://player.vimeo.com/video/223522722" frameborder="0"></iframe></div>
-
-#### Egg  
-
-<small>Fullscreen ⤴</small>
-
-](https://vimeo.com/223523547)
-
-<div class="video"><span class="video-height"></span><iframe src="https://player.vimeo.com/video/223523547" frameborder="0"></iframe></div>
-
-#### Improvisation  
-
-<small>Fullscreen ⤴</small>
-
-](https://vimeo.com/125913669)
-
-<div class="video"><span class="video-height"></span><iframe src="https://player.vimeo.com/video/125913669" frameborder="0"></iframe></div>
-*/</script>
+<table class="fl tl w-100 w-50-ns mb5 collapse">
+	<tbody>
+	<tr class="">
+    <td class="gray fw5 pl2 w-50 w-25-ns hover-bg-near-white transition">
+      <a class="solid" target="_blank" href="https://vimeo.com/223523547">
+      <h4>Egg<br></h4>
+      <p><small>Fullscreen&nbsp;⤴</small></p>
+      </a>
+      <iframe src="https://player.vimeo.com/video/223523547" frameborder="0"></iframe>
+    </td>
+    <td class="gray fw5 pl2 w-50 w-25-ns hover-bg-near-white transition">
+      <a class="solid" target="_blank" href="https://vimeo.com/125913669">
+      <h4>Improvisation<br></h4>
+      <p><small>Fullscreen&nbsp;⤴</small></p>
+      </a>
+      <iframe src="https://player.vimeo.com/video/125913669" frameborder="0"></iframe>
+    </td>
+	</tr>
+	</tbody>
+</table>
+</div>
+</div>

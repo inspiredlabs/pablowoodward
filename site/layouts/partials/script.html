@@ -255,6 +255,11 @@ buttonGroup.addEventListener('click', function(event) {
 })();
 
 </script>
+
+<script>Element.prototype.remove=function(){this.parentElement.removeChild(this);}
+NodeList.prototype.remove=HTMLCollection.prototype.remove=function(){for(var i=this.length-1;i>=0;i--){if(this[i]&&this[i].parentElement){this[i].parentElement.removeChild(this[i]);}}};(function(){var displayOnlineStatus=document.getElementById("online-status"),isOnline=function(){displayOnlineStatus.innerHTML=document.getElementById('iframeOnline').innerHTML;displayOnlineStatus.className="online";document.getElementsByClassName("offline").remove();},isOffline=function(){displayOnlineStatus.innerHTML=document.getElementById('iframeOffline').innerHTML;displayOnlineStatus.className="offline";document.getElementsByClassName("online").remove();};if(window.addEventListener){window.addEventListener("online",isOnline,false);window.addEventListener("offline",isOffline,false);}
+else{document.body.ononline=isOnline;document.body.onoffline=isOffline;};})();window.addEventListener('load',function(){if(navigator.onLine){document.getElementById("online-status").innerHTML=document.getElementById('iframeOnline').innerHTML;document.getElementById("online-status").className="online";}else{document.getElementById("online-status").innerHTML=document.getElementById('iframeOffline').innerHTML;document.getElementById("online-status").className="offline";}});</script>
+
 <!--<script src="{{ .Site.BaseURL }}js/bg-lazyload.js"></script>-->
 <script>
 
