@@ -6,7 +6,7 @@ icon: info
 ---
 
 {{<retina
-	w-size="w-third w-50-ns w-third-m w-third-l"
+	w-size="w-50 w-50-ns w-third-m w-third-l"
 	src="img/JC1.jpg"
 	title=""	
 	alt="A photo of Pablo Woodward"
@@ -15,7 +15,7 @@ icon: info
 <!--src-small="img/JC1.jpg"-->
 
 ## Pablo&nbsp;Woodward
-### UK Equity Member | AUS MEAA Member
+### UK&nbsp;Equity&nbsp;Member | AUS&nbsp;MEAA&nbsp;Member
 <!--
 <h1 class="f2 f1-ns b">Pablo&nbsp;Woodward</h1>
 <h2 class="f3 f4-ns mb5">UK Equity Member | AUS MEAA Member</h2>
@@ -23,61 +23,61 @@ icon: info
 
 #### Stats
 
-<div class=cf>
-<table class="fl tl w-50-ns mb5">
+<div class="cf f4">
+<table class="fl tl w-100 w-50-ns mb5">
 	<tbody>
 	<tr>
-		<td class="text-muted right-aligned slim">Location:</td>
-		<td class="slim">London, UK</td>
+		<td class="gray tr fw4 pr2 w-50 w-25-ns">Location:</td>
+		<td class="fw5 pl2 w-50 w-25-ns">London, UK</td>
 	</tr>
 	<tr>
-		<td class="text-muted right-aligned slim">Height:</td>
-		<td class="slim">5'8" (172cm)</td>
+		<td class="gray tr fw4 pr2 w-50 w-25-ns">Height:</td>
+		<td class="fw5 pl2 w-50 w-25-ns">5'8" (172cm)</td>
 	</tr>
 	<tr>
-		<td class="text-muted right-aligned slim">Weight:</td>
-		<td class="slim">11st. (70kg)</td>
+		<td class="gray tr fw4 pr2 w-50 w-25-ns">Weight:</td>
+		<td class="fw5 pl2 w-50 w-25-ns">11st. (70kg)</td>
 	</tr>
 	<tr>
-		<td class="text-muted right-aligned slim">Playing Age:</td>
-		<td class="slim">26 – 40 years</td>
+		<td class="gray tr fw4 pr2 w-50 w-25-ns">Playing Age:</td>
+		<td class="fw5 pl2 w-50 w-25-ns">26 – 40 years</td>
 	</tr>
 	<tr>
-		<td class="text-muted right-aligned slim">Other:</td>
-		<td class="slim">Equity</td>
+		<td class="gray tr fw4 pr2 w-50 w-25-ns">Other:</td>
+		<td class="fw5 pl2 w-50 w-25-ns">Equity</td>
 	</tr>
 	<tr>
-		<td class="text-muted right-aligned slim">Appearance:</td>
-		<td class="slim">Black-Other&nbsp;Areas, Latin&nbsp;American, Mixed&nbsp;Race</td>
+		<td class="gray tr fw4 pr2 w-50 w-25-ns">Appearance:</td>
+		<td class="fw5 pl2 w-50 w-25-ns">Black-Other&nbsp;Areas, Latin&nbsp;American, Mixed&nbsp;Race</td>
 	</tr>
 	</tbody>
 </table>
 
-<table class="fl tl w-50-ns mb5">
+<table class="fl tl w-100 w-50-ns mb5">
 	<tbody>
 		<tr>
-			<td class="text-muted right-aligned slim">Eye Colour:</td>
-			<td class="slim">Brown</td>
+			<td class="gray tr fw4 pr2 w-50 w-25-ns">Eye Colour:</td>
+			<td class="fw5 pl2 w-50 w-25-ns">Brown</td>
 		</tr>
 		<tr>
-			<td class="text-muted right-aligned slim">Hair Colour:</td>
-			<td class="slim">Black</td>
+			<td class="gray tr fw4 pr2 w-50 w-25-ns">Hair Colour:</td>
+			<td class="fw5 pl2 w-50 w-25-ns">Black</td>
 		</tr>
 		<tr>
-			<td class="text-muted right-aligned slim">Hair Length:</td>
-			<td class="slim">Short</td>
+			<td class="gray tr fw4 pr2 w-50 w-25-ns">Hair Length:</td>
+			<td class="fw5 pl2 w-50 w-25-ns">Short</td>
 		</tr>
 		<tr>
-			<td class="text-muted right-aligned slim">Facial Hair:</td>
-			<td class="slim">Goatee</td>
+			<td class="gray tr fw4 pr2 w-50 w-25-ns">Facial Hair:</td>
+			<td class="fw5 pl2 w-50 w-25-ns">Goatee</td>
 		</tr>
 		<tr>
-			<td class="text-muted right-aligned slim">Voice Character:</td>
-			<td class="slim">Natural</td>
+			<td class="gray tr fw4 pr2 w-50 w-25-ns">Voice Character:</td>
+			<td class="fw5 pl2 w-50 w-25-ns">Natural</td>
 		</tr>
 		<tr>
-			<td class="text-muted right-aligned slim">Voice Quality:</td>
-			<td class="slim">Strong</td>
+			<td class="gray tr fw4 pr2 w-50 w-25-ns">Voice Quality:</td>
+			<td class="fw5 pl2 w-50 w-25-ns">Strong</td>
 		</tr>
 	</tbody>
 </table>

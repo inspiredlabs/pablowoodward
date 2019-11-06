@@ -1,0 +1,9 @@
+<!-- image -->
+<img class="b-lazy no-select w-100 ma0 carousel-cell" src="data:image/gif,GIF89a,AAAAAAE"	    
+	data-src="{{ .Site.BaseURL }}{{ index .Params "src" }}"
+  {{ if or (isset .Params "alt") (isset .Params "caption") }}alt="{{ if isset .Params "alt"}}{{ index .Params "alt"}}{{else}}{{ index .Params "caption" }}{{ end }}"{{ end }} /><!-- image -->
+
+
+
+	
+ 

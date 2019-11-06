@@ -11,42 +11,11 @@ icon: vimeo
 
 {{<retina
 	w-size="w-third w-50-ns w-third-m w-third-l"
-	src="img/2015G.jpg"
-	alt="Pablo Woodward acting."
-	bg-color="" >}}
-	
-{{<retina
-	w-size="w-third w-50-ns w-third-m w-third-l"
-	src="img/2015K.jpg"
-	alt="Pablo Woodward acting."
-	bg-color="" >}}
-	
-{{<retina
-	w-size="w-third w-50-ns w-third-m w-third-l"
-	src="img/2015L.jpg"	
-	alt="Pablo Woodward acting."
-	bg-color="" >}}
-
-{{<retina
-	w-size="w-third w-50-ns w-third-m w-third-l"
 	src="img/dance-2x.jpg"	
 	alt="Pablo Woodward acting."
 	bg-color="" >}}
 
 <!--src-small="img/dance-1x.jpg"	-->
-
-{{<retina
-	w-size="w-third w-50-ns w-third-m w-third-l"
-	src="img/bunny-catsuit_05.jpg"
-	alt="Pablo Woodward acting."
-	bg-color="" >}}
-	
-{{<retina
-	w-size="w-third w-50-ns w-third-m w-third-l"
-	src="img/M55128.0122.jpg"
-	alt="Pablo Woodward acting."
-	bg-color="" >}}
-
 
 {{<retina
 	w-size="w-third w-50-ns w-third-m w-third-l"
@@ -88,6 +57,11 @@ icon: vimeo
 
 <!--src-small="img/workshop-1x.jpg"-->
 
+{{<retina
+	w-size="w-third w-50-ns w-third-m w-third-l"
+	src="img/bunny-catsuit_05.jpg"
+	alt="Pablo Woodward acting."
+	bg-color="" >}}
 
 <script>/*
 <small>Fullscreen ⤴</small>
