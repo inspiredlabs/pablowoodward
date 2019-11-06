@@ -189,7 +189,7 @@ buttonGroup.addEventListener('click', function(event) {
 	function retinaBounce() { 	
 		let number = Math.floor((Math.random()*10));
 		setTimeout(function(){ bLazy.revalidate(); }, number);
-		console.log(number);
+		console.log('retinaBounce:' + number);
 	};
 
 	let section = document.querySelectorAll("section");
@@ -199,7 +199,58 @@ buttonGroup.addEventListener('click', function(event) {
 		elem.addEventListener("touchstart", retinaBounce);
 	});
 	
+	// https://stackoverflow.com/questions/40956717/how-to-addeventlistener-to-multiple-elements-in-a-single-line:
+	// elementsArray.forEach(el => el.addEventListener('input', functionThatDoesStuff))
+	
+	
 })();
 
 
+
+(function(){
+	
+	//https://stackoverflow.com/questions/4917664/detect-viewport-orientation-if-orientation-is-portrait-display-alert-message-ad
+	const debounce = (func, wait, immediate) => {
+		var timeout;
+		return () => {
+			const context = this, args = arguments;
+			const later = function() {
+				timeout = null;
+				if (!immediate) func.apply(context, args);
+			};
+			const callNow = immediate && !timeout;
+			clearTimeout(timeout);
+			timeout = setTimeout(later, wait);
+			if (callNow) func.apply(context, args);
+		};
+	};
+	
+	
+	function orient() {
+		if (window.innerHeight > window.innerWidth) {
+			//alert('portrait');
+			flkty.resize()
+		} else {
+			//alert('landscape');
+			flkty.resize()
+		}//if	
+
+	}//orient
+	
+	// Listen for orientation changes
+//	window.addEventListener("orientationchange", function() {
+//	  orient();
+//	}, false);
+
+	window.addEventListener('orientationchange', () => orient(), false);
+	
+	// Listen for resize changes
+//	window.addEventListener("resize", function() {
+//	  orient();
+//	}, false);
+
+	window.addEventListener('resize', debounce(() => orient(),
+	200, false), false);
+	
+})();
 </script>
