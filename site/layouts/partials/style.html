@@ -11,6 +11,9 @@
 	/* 04.11.19	.ma-auto					mr-auto ml-auto					+ missing top & bottom	*/
 	/* 04.11.19 .backface-hidden	-webkit hide (flickity)	addition								*/
 	/* 04.11.19 .no-focus-ring 		<button> + button-reset	addition								*/
+	/* 06.11.19 .transition 			give up subpixel render -webkit-font-smoothing	*/
+	
+
 	
 	/* .box-sizing,etc...{border-box;margin-top:0;margin-bottom:0;}. */
 	/* .dim and .grow: https://github.com/tachyons-css/tachyons/issues/337 */
@@ -8471,12 +8474,16 @@
 .transition {
 	transition: all 0.4s ease 0s;
 	-webkit-transition: all 0.4s ease 0s;
+  -webkit-font-smoothing: antialiased; /* Don't give up! */
+	/* https://stackoverflow.com/questions/12502234/how-to-prevent-webkit-text-rendering-change-during-css-transition	*/
 }
 
 .transition:hover {
 	transition: all 0.4s ease 0s;
 	-webkit-transition: all 0.4s ease 0s;
 }
+
+
 </style>
 
 
@@ -8733,9 +8740,61 @@
 
 <!-- Text shadow #333 -->
 <style>
-	/* Atomise convention: */
-	.text-shadow { text-shadow: 0px 1px 1px #333; /* Xpx Ypx BLURpx RGB */ }
 	
+	/* Xpx Ypx BLURpx RGB */
+	/* Atomise convention: 
+	.text-shadow { text-shadow: 0px 1px 1px #333; }
+	*/
+	/* Half scale determined: https://tachyons-tldr.now.sh/#/scales */	
+	
+	
+	/* small white text shadow */
+	.ts1-white {
+	  text-shadow: 0px 0.0625rem 0.0625rem white;
+	}
+	
+	@media screen and (min-width: 30em) {
+	  .ts1-white-ns {
+	    text-shadow: 0px 0.0625rem 0.0625rem white;
+	  }
+	}
+	
+	@media screen and (min-width: 30em) and (max-width: 60em) {
+	  .ts1-white-m {
+	    text-shadow: 0px 0.0625rem 0.0625rem white;
+	  }
+	}
+	
+	@media screen and (min-width: 60em) {
+	  .ts1-white-l {
+	    text-shadow: 0px 0.0625rem 0.0625rem white;
+	  }
+	}
+	
+	/* large white text shadow */
+	.ts2-white {
+	  text-shadow: 0px 0.125rem 0.125rem white;
+	}
+	
+	@media screen and (min-width: 30em) {
+	  .ts2-white-ns {
+	    text-shadow: 0px 0.125rem 0.125rem white;
+	  }
+	}
+	
+	@media screen and (min-width: 30em) and (max-width: 60em) {
+	  .ts2-white-m {
+	    text-shadow: 0px 0.125rem 0.125rem white;
+	  }
+	}
+	
+	@media screen and (min-width: 60em) {
+	  .ts2-white-l {
+	    text-shadow: 0px 0.125rem 0.125rem white;
+	  }
+	}
+	
+	/* small dark-gray text shadow */
 	.ts1-dark-gray {
 	  text-shadow: 0px 0.0625rem 0.0625rem #333;
 	}
@@ -8757,9 +8816,8 @@
 	    text-shadow: 0px 0.0625rem 0.0625rem #333;
 	  }
 	}
-	
-	/* Half scale determined: https://tachyons-tldr.now.sh/#/scales */
-	
+
+	/* large dark-gray text shadow */	
 	.ts2-dark-gray {
 	  text-shadow: 0px 0.125rem 0.125rem #333;
 	}

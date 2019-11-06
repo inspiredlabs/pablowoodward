@@ -24,58 +24,52 @@ icon: info
 #### Stats
 
 <div class="cf f4">
-<table class="fl tl w-100 w-50-ns mb5">
+<table class="fl tl w-100 w-50-ns mb5 collapse">
 	<tbody>
-	<tr>
-		<td class="gray tr fw4 pr2 w-50 w-25-ns">Location:</td>
-		<td class="fw5 pl2 w-50 w-25-ns">London, UK</td>
+	<tr class="hover-bg-near-white transition">
+		<td class="gray tr fw4 pr2 w-50 w-25-ns">Location:</td><td class="fw5 pl2 w-50 w-25-ns">London, UK</td>
 	</tr>
-	<tr>
-		<td class="gray tr fw4 pr2 w-50 w-25-ns">Height:</td>
-		<td class="fw5 pl2 w-50 w-25-ns">5'8" (172cm)</td>
+	<tr class="hover-bg-near-white transition">
+		<td class="gray tr fw4 pr2 w-50 w-25-ns">Height:</td><td class="fw5 pl2 w-50 w-25-ns">5'8" (172cm)</td>
 	</tr>
-	<tr>
-		<td class="gray tr fw4 pr2 w-50 w-25-ns">Weight:</td>
-		<td class="fw5 pl2 w-50 w-25-ns">11st. (70kg)</td>
+	<tr class="hover-bg-near-white transition">
+		<td class="gray tr fw4 pr2 w-50 w-25-ns">Weight:</td><td class="fw5 pl2 w-50 w-25-ns">11st. (70kg)</td>
 	</tr>
-	<tr>
-		<td class="gray tr fw4 pr2 w-50 w-25-ns">Playing Age:</td>
-		<td class="fw5 pl2 w-50 w-25-ns">26 – 40 years</td>
+	<tr class="hover-bg-near-white transition">
+		<td class="gray tr fw4 pr2 w-50 w-25-ns">Playing Age:</td><td class="fw5 pl2 w-50 w-25-ns">26 – 40 years</td>
 	</tr>
-	<tr>
-		<td class="gray tr fw4 pr2 w-50 w-25-ns">Other:</td>
-		<td class="fw5 pl2 w-50 w-25-ns">Equity</td>
+	<tr class="hover-bg-near-white transition">
+		<td class="gray tr fw4 pr2 w-50 w-25-ns">Other:</td><td class="fw5 pl2 w-50 w-25-ns">Equity</td>
 	</tr>
-	<tr>
-		<td class="gray tr fw4 pr2 w-50 w-25-ns">Appearance:</td>
-		<td class="fw5 pl2 w-50 w-25-ns">Black-Other&nbsp;Areas, Latin&nbsp;American, Mixed&nbsp;Race</td>
+	<tr class="hover-bg-near-white transition">
+		<td class="gray tr fw4 pr2 w-50 w-25-ns">Appearance:</td><td class="fw5 pl2 w-50 w-25-ns">Black-Other&nbsp;Areas, Latin&nbsp;American, Mixed&nbsp;Race</td>
 	</tr>
 	</tbody>
 </table>
 
-<table class="fl tl w-100 w-50-ns mb5">
+<table class="fl tl w-100 w-50-ns mb5 collapse">
 	<tbody>
-		<tr>
+		<tr class="hover-bg-near-white transition">
 			<td class="gray tr fw4 pr2 w-50 w-25-ns">Eye Colour:</td>
 			<td class="fw5 pl2 w-50 w-25-ns">Brown</td>
 		</tr>
-		<tr>
+		<tr class="hover-bg-near-white transition">
 			<td class="gray tr fw4 pr2 w-50 w-25-ns">Hair Colour:</td>
 			<td class="fw5 pl2 w-50 w-25-ns">Black</td>
 		</tr>
-		<tr>
+		<tr class="hover-bg-near-white transition">
 			<td class="gray tr fw4 pr2 w-50 w-25-ns">Hair Length:</td>
 			<td class="fw5 pl2 w-50 w-25-ns">Short</td>
 		</tr>
-		<tr>
+		<tr class="hover-bg-near-white transition">
 			<td class="gray tr fw4 pr2 w-50 w-25-ns">Facial Hair:</td>
 			<td class="fw5 pl2 w-50 w-25-ns">Goatee</td>
 		</tr>
-		<tr>
+		<tr class="hover-bg-near-white transition">
 			<td class="gray tr fw4 pr2 w-50 w-25-ns">Voice Character:</td>
 			<td class="fw5 pl2 w-50 w-25-ns">Natural</td>
 		</tr>
-		<tr>
+		<tr class="hover-bg-near-white transition">
 			<td class="gray tr fw4 pr2 w-50 w-25-ns">Voice Quality:</td>
 			<td class="fw5 pl2 w-50 w-25-ns">Strong</td>
 		</tr>
