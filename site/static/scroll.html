@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!-- https://test<br/>mysite.io -->
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, shrink-to-fit=no" >
+<link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
+<link rel="shortcut icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
+
+<meta name="msapplication-TileColor" content="#57005d">
+<meta name="msapplication-TileImage" content="favicon.png">
+
+<!-- Enable responsiveness on mobile devices-->
+<meta name=apple-mobile-web-app-title content="{{ .Site.Title }}">
+
+<!--Styles'n'Scripts -->
+
+<style>
+/* external css: flickity.css */
+html{-ms-touch-action:manipulation;touch-action:manipulation;}
+/*html, body{height:100%;width:100%;margin:0;padding:0;overflow:hidden;-webkit-backface-visibility:hidden;}*/
+.carousel-cell{/*width: 100%;*/width:100vw;/*height: 100%;*/height:calc(100% - 1px);/*overflow-y:scroll;-webkit-overflow-scrolling:touch;padding-top:4.4rem;*/}
+
+.flickity-page-dots {
+	bottom: 0;
+	z-index: 999;
+}
+
+.button.is-selected {
+  background: white;
+  opacity: 1;
+}
+
+article p {
+	text-align: left;
+}
+
+article h4, article h5, article h6 {
+	text-align: left;
+}
+
+</style>
+</head>
+<body class="ma0 pa0 no-clutter charcoal system"><!-- w-100 h-100 overflow-hidden backface-hidden -->
+<section>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+Hello!
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+Hello!test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+Hello!test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+Hello!test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+Hello!test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+Hello!test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+Hello!test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+Hello!test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+Hello!test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+Hello!
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+Ciao!
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+Hello!
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+Hello!test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+Hello!test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+Hello!test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+Hello!test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+Hello!test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+Hello!test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+Hello!test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+Hello!test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+Hello!
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+Ciao!
+</section>
+
+	
+	<script>
+	
+	
+	
+	(function(){
+		// what should we do when scrolling occurs
+		var runOnScroll =  function(evt) {
+		  // not the most exciting thing, but a thing nonetheless
+		  console.log(evt.target);
+		  
+		  // debounce, then revalidate bLazy?
+		  
+		};
+		
+		// grab elements as array, rather than as NodeList
+		var elements = document.getElementById("scrollable");
+		elements = Array.prototype.slice.call(elements);
+		
+		// and then make each element do something on scroll
+		elements.forEach(function(element) {
+		  window.addEventListener("scroll", runOnScroll);
+		});
+		
+		// global lock, so put this code in a closure of some sort so you're not polluting.
+		var locked = false;
+		var lastCall = false;
+		
+		var runOnScroll =  function(evt) {
+		  if(locked) return;
+		
+		  if (lastCall) clearTimeout(lastCall);
+		  lastCall = setTimeout(() => {
+		    runOnScroll(evt);
+		    // you do this because you want to handle the last
+		    // scroll event, even if it occurred while another
+		    // event was being processed.
+		  }, 200);
+		
+		  // ...your code goes here...
+		
+		  locked = false;
+		};
+		
+	})();
+	
+	
+	
+	
+		
+	</script>
+</body>
+</html>

@@ -7,12 +7,45 @@
 
 <script src="{{ .Site.BaseURL }}js/flickity.pkgd.min.js"></script>
 <script src="{{ .Site.BaseURL }}js/hash.min.js"></script>
-<script>document.ontouchmove=function(event){var isTouchMoveAllowed=true,target=event.target;while(target!==null){if(target.classList&&target.classList.contains('disable-scrolling')){isTouchMoveAllowed=false;break;}
+<script>
+document.ontouchmove = function(event) {
+  var isTouchMoveAllowed = true,
+    target = event.target;
+  while (target !== null) {
+    if (target.classList && target.classList.contains('disable-scrolling')) {
+      isTouchMoveAllowed = false;
+      break;
+    }
+    target = target.parentNode;
+  }
+  if (!isTouchMoveAllowed) {
+    event.preventDefault();
+  }
+};
+
+function removeIOSRubberEffect(element) {
+  element.addEventListener("touchstart", function() {
+    var top = element.scrollTop,
+      totalScroll = element.scrollHeight,
+      currentScroll = top + element.offsetHeight;
+    if (top === 0) {
+      element.scrollTop = 1;
+    } else if (currentScroll === totalScroll) {
+      element.scrollTop = top - 1;
+    }
+  });
+}
+removeIOSRubberEffect(document.querySelector(".scrollable"));
+</script>
+<!--script>document.ontouchmove=function(event){var isTouchMoveAllowed=true,target=event.target;while(target!==null){if(target.classList&&target.classList.contains('disable-scrolling')){isTouchMoveAllowed=false;break;}
 target=target.parentNode;}if(!isTouchMoveAllowed){event.preventDefault();}};function removeIOSRubberEffect(element){element.addEventListener("touchstart",function(){var top=element.scrollTop,totalScroll=element.scrollHeight,currentScroll=top+element.offsetHeight;if(top===0){element.scrollTop=1;}else if(currentScroll===totalScroll){element.scrollTop=top-1;}});}
-removeIOSRubberEffect(document.querySelector(".scrollable"));</script>
+removeIOSRubberEffect(document.querySelector(".scrollable"));</script-->
 <!-- Lazyload docs: https://flickity.metafizzy.co/options.html -->
+
+
+
 <script>		
-		
+
 function initGroup() {
 	var init = document.querySelector('.button-group--cells').getElementsByTagName('button')[0];
 	init.classList.add('is-selected');		
@@ -33,6 +66,7 @@ var flkty = new Flickity( carousel, {
   pageDots: false,			  
   hash: true,
   on: {
+
     ready: function() {
     
     	//Begin store
@@ -54,8 +88,6 @@ var flkty = new Flickity( carousel, {
 	    		//populated correctly, but not yet = move on
 	    		//DEBUG alert('not:' + listItem); //DEBUG
 	    		//populated wrong = sanitise
-
-	    		//DEBUG alert(uri); //DEBUG
 	    		
     		} else if (uri == listItem) {
 	    		//Store
@@ -65,11 +97,13 @@ var flkty = new Flickity( carousel, {
     		} else {
     			//DEBUG alert(uri);//DEBUG
     			// 2047-06112019
-    			removeHash();
     			initGroup();
+    			removeHash(); 
     		}//if
+
     		
-    	}//for    	
+    	}//for
+    	//retinaBounce();    	    	
     }//ready
   }//on
   
@@ -107,40 +141,14 @@ flkty.on('select', function() {
     var selectedButton = buttonGroup.children[flkty.selectedIndex];
     previousSelectedButton.classList.remove('is-selected');
     selectedButton.classList.add('is-selected');
-    
-    // revalidate bLazy
-    // the code
-    var bLazy = new Blazy({
-    	offset: 100, // Loads 100px before visible
-      success: function(){
-        updateCounter();
-      }
-    });
-    
-    // debugInfo
-    var imageLoaded = 0;
-    var eleCountLoadedImages = document.getElementById('debugInfo');
-    
-    function updateCounter() {
-      imageLoaded++;
-      eleCountLoadedImages.innerHTML = imageLoaded;
-    }
-    
-    //function retinaBounce() {
-    	//let number = Math.floor((Math.random()*100);
-    	//setTimeout(function(){ bLazy.revalidate(); }, 222);//
-    //};
-    // revalidate bLazy
-    //retinaBounce();
-    
 });
 buttonGroup.addEventListener('click', function(event) {
-    if (!matchesSelector(event.target, '.button')) {
-      return;
-    }
-    var index = buttons.indexOf(event.target);
-    // isInstant: true,
-    flkty.select(index, false, true);
+  if (!matchesSelector(event.target, '.button')) {
+    return;
+  }
+  var index = buttons.indexOf(event.target);
+  // isInstant: true,
+  flkty.select(index, false, true);
 });
 </script>
 <script>
@@ -152,9 +160,46 @@ buttonGroup.addEventListener('click', function(event) {
 			}
 		}
 	})();
+</script>
+<script>	
 	
+	// revalidate bLazy
+	// the code
+	var bLazy = new Blazy({
+		offset: 10, // Loads 10px before visible //1800px
+	  success: function(){
+	    updateCounter();
+	  }
+	});
+	
+	// debugInfo
+	var imageLoaded = 0;
+	var eleCountLoadedImages = document.getElementById('debugInfo');
+	
+	function updateCounter() {
+	  imageLoaded++;
+	  eleCountLoadedImages.innerHTML = imageLoaded;
+	}
 	
 </script>
 <script>
+
+(function(){
+
+	function retinaBounce() { 	
+		let number = Math.floor((Math.random()*10));
+		setTimeout(function(){ bLazy.revalidate(); }, number);
+		console.log(number);
+	};
+
+	let section = document.querySelectorAll("section");
+	
+	section.forEach(function(elem) {
+		elem.addEventListener("mouseover", retinaBounce);
+		elem.addEventListener("touchstart", retinaBounce);
+	});
+	
+})();
+
 
 </script>
