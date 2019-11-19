@@ -1,24 +1,27 @@
 ---
 
 like: actor
-description: "I have skills, qualifications, an open heart, an open mind, and I want to use them all"
+description: "I have skills, qualifications, an open heart, an open mind, and I want to use them all."
 
-keywords: 
+keywords:
+- Actor
+- Presenter
 - UK Equity Member
 - AUS MEAA Member
-- The Royal Opera
-- theatre
-- Brighton
-- London
-- children
 - culture
-- The Disco Bunny
-- Kasabian
 - energetic
 - Latin American
 - Black
 - Mixed Race
+- Comedian
 
-image: https://pablowoodward.com/img/2015G.jpg
+news_keywords:
+- The Royal Opera
+- theatre
+- London
+- Kasabian
+- Brighton
+- The Disco Bunny
+- children
 
 ---

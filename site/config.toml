@@ -11,10 +11,9 @@ images = "https://pablowoodward.com/img/2015G.jpg" #JC1.jpg
 disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 
 [Params]
-  image = "img/2015G.jpg" #JC1.jpg
   email = "subject1082@gmail.com"
-  keywords = ["UK Equity Member", "AUS MEAA Member", "The Royal Opera", "theatre", "Brighton", "London", "children", "culture", "The Disco Bunny", "Kasabian", "energetic", "Latin American", "Black", "Mixed Race"]
-  description = """Actor, Presenter, Comedian & ethnically ambiguous probable Latino with an insatiable energy to explore, adventure & learn: Bold Linguistic Artist Extrordinaire.""" #<160 thing for SERP
+  keywords = ["Actor", "Presenter", "UK Equity Member", "AUS MEAA Member", "The Royal Opera", "theatre", "Brighton", "London", "children", "culture", "The Disco Bunny", "Kasabian", "energetic", "Latin American", "Black", "Mixed Race", "Comedian" ]
+  description = """Ethnically ambiguous probable Latino with an insatiable energy to explore, adventure & learn: Bold Linguistic Artist Extrordinaire.""" #<160 thing for SERP
   SiteDescription = "UK Equity Member | AUS MEAA Member"
   copyright = "Scott Phillips" # © = http://www.theukwebdesigncompany.com/articles/entity-escape-characters.php
   #linkedin = "theurbanaut"
@@ -24,7 +23,8 @@ disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 [author]
   name = "Pablo Woodward"
   email = "subject1082@gmail.com"
+  image = "https://pablowoodward.com/img/M55128.0122.jpg" #M55128.0122.jpg, JC1.jpg
   homepage = "https://pablowoodward.com/"
   facebook = "https://www.facebook.com/pablo.woodward/" #"inspiredlabs"
-  twitter = "https://twitter.com/PabloWoodward/" #"inspiredlabs"
+  twitter = "pablowoodward" #https://twitter.com/PabloWoodward/, "inspiredlabs"
 	bio = """Actor, Presenter, Comedian & ethnically ambiguous probable Latino with an insatiable energy to explore, adventure & learn: Bold Linguistic Artist Extrordinaire.""" #"""multi-line""" #https://discourse.gohugo.io/t/how-to-access-site-params-map-with-a-params-variable/348/2
