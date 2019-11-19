@@ -26,21 +26,22 @@
     <meta name="twitter:title" content="{{ .Site.Title }} | {{ .Site.Params.SiteDescription }}" />{{/* .Description */}}
     <meta name="twitter:creator" content="@{{ .Site.Author.twitter }}" />
     <meta name="twitter:description" content="{{ .Site.Params.Description }}" />{{/* .Description */}}
-    <meta name="twitter:image" content="{{ .Site.Author.image }}" />
-    <meta name="twitter:image:src" content="{{ .Site.Author.image }}" />
+    <meta name="twitter:image" content="{{ .Site.Author.image }}" />{{/* .Site.Author.image | absURL */}}
+    <meta name="twitter:image:src" content="{{ .Site.Author.image }}" />{{/* .Site.Author.image | absURL */}}
 
     <!-- Open Graph, Facebook needs: context, no branding! Optional `Locale`. -->
     <!--meta property="og:site_name" content="InstantWebapp" /-->
     <!-- Mandetory: `Type` website | article | blog = LIKE! (more: neilpatel.com/blog/open-graph-meta-tags/). -->
     <meta property="og:author" content="{{ .Site.Author.name }}" />
     <meta property="og:type" content="{{ if (isset .Params "like") }}{{ .Params.like }}{{else}}article{{ end }}" />
+    <meta property="og:site_name" content="{{ .Site.Title }}" />
     <meta property="og:title" content="{{ .Site.Title }} | {{ .Site.Params.SiteDescription }}" />{{ if (isset .Params "description") }}
     <meta property="og:description" content="{{ .Site.Params.Description }}" />{{/* .Params.description }} {{ if (isset .Site.Params "description") }}{{ .Site.Params.Description }}{{ end */}}{{ end }}
     <meta property="og:url" content="{{ .Permalink }}" />{{ if (isset .Params "LanguageCode") }}
     <meta property="og:locale" content="{{ .Params.LanguageCode }}" />{{ else}}
     <meta property="og:locale" content="{{ if .Params.LanguageCode }}{{ .Params.LanguageCode }}{{ else }}{{ $.Site.LanguageCode | default "en-gb" }}{{ end }}" />{{ end }}
-    <meta property="og:image" content="{{ .Site.Author.image }}" />
-    <meta property="og:image:secure_url" content="{{ .Site.Author.image | absURL }}" />
+    <meta property="og:image" content="{{ .Site.BaseURL }}favicon.png" />
+    <meta property="og:image:secure_url" content="{{ .Site.BaseURL }}favicon.png" />
 
     <!-- https://testmysite.io -->
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, shrink-to-fit=no" >
