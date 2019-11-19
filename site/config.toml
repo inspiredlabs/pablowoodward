@@ -1,8 +1,9 @@
 # baseurl = "./" # local only
 baseurl = "https://pablowoodward.netlify.com/" #{{ .Site.BaseURL }} "/" && netlify
 # relativeURLs = "true" #https://github.com/gohugoio/hugo/issues/985
-languageCode = "en-gb" #Initial configuration reset #languageCode = "en-us"
+languageCode = "en" #Initial configuration reset #languageCode = "en-us"
 title = "Pablo Woodward"
+images = "https://pablowoodward.com/img/2015G.jpg" #JC1.jpg
 
 # RSS, categories and tags disabled for an easy start
 # See configuration options for more details:
@@ -10,10 +11,20 @@ title = "Pablo Woodward"
 disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 
 [Params]
-  #github = "inspiredlabs"
-  #twitter = "inspiredlabs"
-  email = "pablo@pablowoodward.com"
+  image = "img/2015G.jpg" #JC1.jpg
+  email = "subject1082@gmail.com"
+  keywords = ["UK Equity Member", "AUS MEAA Member", "The Royal Opera", "theatre", "Brighton", "London", "children", "culture", "The Disco Bunny", "Kasabian", "energetic", "Latin American", "Black", "Mixed Race"]
+  description = """Actor, Presenter, Comedian & ethnically ambiguous probable Latino with an insatiable energy to explore, adventure & learn: Bold Linguistic Artist Extrordinaire.""" #<160 thing for SERP
   SiteDescription = "UK Equity Member | AUS MEAA Member"
+  copyright = "Scott Phillips" # © = http://www.theukwebdesigncompany.com/articles/entity-escape-characters.php
   #linkedin = "theurbanaut"
   #cover = "/img/background-cover.jpg"
   #logo = "/img/logo-1.jpg"
+
+[author]
+  name = "Pablo Woodward"
+  email = "subject1082@gmail.com"
+  homepage = "https://pablowoodward.com/"
+  facebook = "https://www.facebook.com/pablo.woodward/" #"inspiredlabs"
+  twitter = "https://twitter.com/PabloWoodward/" #"inspiredlabs"
+	bio = """Actor, Presenter, Comedian & ethnically ambiguous probable Latino with an insatiable energy to explore, adventure & learn: Bold Linguistic Artist Extrordinaire.""" #"""multi-line""" #https://discourse.gohugo.io/t/how-to-access-site-params-map-with-a-params-variable/348/2
