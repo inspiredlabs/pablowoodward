@@ -23,7 +23,7 @@ disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 [author]
   name = "Pablo Woodward"
   email = "subject1082@gmail.com"
-  image = "https://pablowoodward.com/favicon.png" #M55128.0122.jpg, M55128.0122.jpg, JC1.jpg
+  image = "https://pablowoodward.com/M55128.0122.jpg" #M55128.0122.jpg, M55128.0122.jpg, JC1.jpg, favicon.png
   homepage = "https://pablowoodward.com/"
   facebook = "https://www.facebook.com/pablo.woodward/" #"inspiredlabs"
   twitter = "pablowoodward" #https://twitter.com/PabloWoodward/, "inspiredlabs"
