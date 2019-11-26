@@ -15,8 +15,8 @@ icon: info
 
 <!--src-small="img/JC1.jpg"-->
 
-## Pablo&nbsp;Woodward
-### UK&nbsp;Equity&nbsp;Member | AUS&nbsp;MEAA&nbsp;Member
+# Pablo&nbsp;Woodward
+## UK&nbsp;Equity&nbsp;Member | AUS&nbsp;MEAA&nbsp;Member
 <!--
 <h1 class="f2 f1-ns b">Pablo&nbsp;Woodward</h1>
 <h2 class="f3 f4-ns mb5">UK Equity Member | AUS MEAA Member</h2>
