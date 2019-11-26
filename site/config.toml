@@ -5,7 +5,7 @@ languageCode = "en" #Initial configuration reset #languageCode = "en-us"
 title = "Pablo Woodward"
 image = "img/JC1.jpg" #JC1.jpg
 logo = "/favicon.png" #{{ }}
-copyright = "Scott Phillips, InspiredLabs.co.uk" # © = http://www.theukwebdesigncompany.com/articles/entity-escape-characters.php
+copyright = "InspiredLabs.co.uk" # © = http://www.theukwebdesigncompany.com/articles/entity-escape-characters.php
 
 # RSS, categories and tags disabled for an easy start
 # See configuration options for more details:
@@ -22,7 +22,7 @@ disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
   #cover = "/img/background-cover.jpg"
 
 [author]
-  type = "actor"
+  type = "actor" #https://www.mandy.com/actor/profile/pablowoodward
   name = "Pablo Woodward"
   email = "subject1082@gmail.com"
   image = "https://pablowoodward.com/M55128.0122.jpg" #M55128.0122.jpg, M55128.0122.jpg, JC1.jpg, favicon.png

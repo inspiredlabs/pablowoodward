@@ -17,6 +17,7 @@ icon: call
   <li class=ml0><span itemprop="email">Email: <a href="mailto:subject1082@gmail.com?subject=Seen%20PabloWoodward.com&body=Hi%20Pablo,%0D%0A%20%20%20%20">subject1082@gmail.com</a></span></li>
   <li class=ml0><span itemprop="facebook">Facebook: <a href="https://www.facebook.com/pablo.woodward">/pablo.woodward</a></span></li>
   <li class=ml0><span itemprop="url">Spotlight: <a href="https://www.spotlight.com/interactive/cv/7015-6725-9646">Pablo Woodward</a></span></li>
+  <!--<li class=ml0><span itemprop="url">Vimeo: <a href="https://vimeo.com/132351634">Reel, June 2015</a></span></li>-->
 </ul>
 </div>
 
@@ -29,7 +30,6 @@ If you are interested in representing me under an agents agreement, or having me
 For artistic projects, ideas, collaborations, invitations to run workshops, to give inspirational and motivational talks, to host or attend events, parties or festivals I welcome you to preferably [email me](mailto:pablo@pablowoodward.com?subject=Seen%20PabloWoodward.com&body=Hi%20Pablo,%0D%0A%20%20%20%20) unless time is of the essence in which case [phone me](tel:+44759330758407), or leave a message.
 
 Please note, my preferred language is English, but I am fluent in French and Spanish so I welcome you to alternatively contact me in those languages.
-
 
 <!-- Email: [pablo@pablowoodward.com](mailto:pablo@pablowoodward.com?subject=Seen%20PabloWoodward.com&body=Hi%20Pablo,%0D%0A%20%20%20%20)  
  -->

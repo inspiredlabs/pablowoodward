@@ -93,7 +93,7 @@ Looking back, my chosen profession in the arts was clear from a very early age, 
 
 Reflecting, my childhood was mentally turbulent, likely it was from being adopted at such a late age and therefor forever trying to find my identity, but it was at Yeovil College that I first grasped elusive happiness. In addition to my A Levels, as mentioned, in Performing arts and Dance, I did a BTEC diploma in Physical Education, did extra curricular classes in Latin American and ballroom dances, and whilst at college I was gifted the roles of Major Robbie Ross in Timberlake Wertenbaker's Our Country's Good and the title role in Anthony Burgess' superb lyrical translation of Cyrano de Bergerac.  
 
-No sooner had I finished college, than I was working professionally, with my first role being in Chris Rea's music video Sweet Summers Day, then, before I knew it, I found myself touring panto across the UK and calling myself a jobbing actor.  
+No sooner had I finished college, than I was working professionally, with my first role being in Chris Rea's music video Sweet Summers Day, then, before I knew it, I found myself touring panto across the UK and calling myself a jobbing [actor](https://www.mandy.com/actor/profile/pablowoodward).  
 
 Not tempted by the first offers of formal training, on the second circuit of asking I was offered a place to train at London Academy of Dramatic Arts (LAMDA) and, principally for love, for I had met Jo Casci, I turned down the offer to study there, instead headed to Australia where I lived many lifetimes in many trades and father two children Rain Josephine and Indiana Rain.  
 
@@ -109,8 +109,8 @@ In late 2012, I returned to London and began to immerse myself full-time into my
 
 I worked, trained, became proactive, and my CV filled with credits in opera, commercials, TIE, short films, immersive jobs, corporate jobs; I became a successful jobbing actor once more.  
 
-The next major chameleonic change in the life of Pablo Woodward came soon after the contract with Glyndebourne Opera in January 2016, when I simply needed to accelerate progress in all areas of personal development, to stop blaming my present situation on my past and ever dreaming of the future in patient hope for the life-changing opportunity to come…. That’s when I decided to be The Disco Bunny.  
+The next major chameleonic change in the life of Pablo Woodward came soon after the contract with Glyndebourne Opera in January 2016, when I simply needed to accelerate progress in all areas of personal development, to stop blaming my present situation on my past and ever dreaming of the future in patient hope for the life-changing opportunity to come…. That’s when I decided to be [The Disco Bunny](https://thediscobunny.com/).  
 
-Now, having found my calling and defined my mission, vision and dream with what I want to do with my time and energy on a humanitarian basis, I return to work as the artist Pablo Woodward.  
+Now, having found my calling and defined my mission, vision and dream with what I want to do with my time and energy on a humanitarian basis, I return to work as the artist [**Pablo Woodward**](https://twitter.com/pablowoodward).  
 
 > "I have skills, qualifications, an open heart, an open mind, and I want to use them all"
