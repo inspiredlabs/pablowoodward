@@ -3,7 +3,9 @@ baseurl = "https://pablowoodward.com/" #{{ .Site.BaseURL }} "/" && netlify
 # relativeURLs = "true" #https://github.com/gohugoio/hugo/issues/985
 languageCode = "en" #Initial configuration reset #languageCode = "en-us"
 title = "Pablo Woodward"
-images = "https://pablowoodward.com/img/2015G.jpg" #JC1.jpg
+image = "img/JC1.jpg" #JC1.jpg
+logo = "/favicon.png" #{{ }}
+copyright = "Scott Phillips, InspiredLabs.co.uk" # © = http://www.theukwebdesigncompany.com/articles/entity-escape-characters.php
 
 # RSS, categories and tags disabled for an easy start
 # See configuration options for more details:
@@ -12,19 +14,19 @@ disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 
 [Params]
   email = "subject1082@gmail.com"
-  keywords = ["Actor", "Presenter", "UK Equity Member", "AUS MEAA Member", "The Royal Opera", "theatre", "Brighton", "London", "children", "culture", "The Disco Bunny", "Kasabian", "energetic", "Latin American", "Black", "Mixed Race", "Comedian" ]
-  description = """Ethnically ambiguous probable Latino with an insatiable energy to explore, adventure & learn: Bold Linguistic Artist Extrordinaire.""" #<160 thing for SERP
+  keywords = ["Actor", "Presenter", "Comedian", "Kids Entertainer", "Childrens Entertainer", "DBS Certified, 2016", "UK Equity Member", "AUS MEAA Member", "The Royal Opera", "theatre", "Brighton", "London", "culture", "The Disco Bunny", "Kasabian", "energetic", "Latino", "Latin American", "Black", "Mixed Race", "multilingual", "Latino" ]
+  description = """Ethnically ambiguous probable Latino with an insatiable energy to explore, adventure & learn: Bold Linguistic Artist Extraordinaire.""" #<160 thing for SERP
   SiteDescription = "UK Equity Member | AUS MEAA Member"
-  copyright = "Scott Phillips" # © = http://www.theukwebdesigncompany.com/articles/entity-escape-characters.php
+
   #linkedin = "theurbanaut"
   #cover = "/img/background-cover.jpg"
-  #logo = "/img/logo-1.jpg"
 
 [author]
+  type = "actor"
   name = "Pablo Woodward"
   email = "subject1082@gmail.com"
   image = "https://pablowoodward.com/M55128.0122.jpg" #M55128.0122.jpg, M55128.0122.jpg, JC1.jpg, favicon.png
   homepage = "https://pablowoodward.com/"
   facebook = "https://www.facebook.com/pablo.woodward/" #"inspiredlabs"
   twitter = "pablowoodward" #https://twitter.com/PabloWoodward/, "inspiredlabs"
-	bio = """Actor, Presenter, Comedian & ethnically ambiguous probable Latino with an insatiable energy to explore, adventure & learn: Bold Linguistic Artist Extrordinaire.""" #"""multi-line""" #https://discourse.gohugo.io/t/how-to-access-site-params-map-with-a-params-variable/348/2
+	bio = """Actor, Presenter, Comedian & ethnically ambiguous probable Latino with an insatiable energy to explore, adventure & learn: Bold Linguistic Artist Extraordinaire.""" #"""multi-line""" #https://discourse.gohugo.io/t/how-to-access-site-params-map-with-a-params-variable/348/2

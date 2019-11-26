@@ -1,11 +1,15 @@
 ---
-
-like: actor
-description: "I have skills, qualifications, an open heart, an open mind, and I want to use them all."
-
+images: ["https://pablowoodward.com/img/M55128.0122.jpg"]
+title: "Pablo Woodward: UK Equity and AUS MEAA Member"
+description: "Actor, Presenter, Entertainer, DBS Certified, 2016"
+blockquote: "I have skills, qualifications, an open heart, an open mind, and I want to use them all."
 keywords:
 - Actor
 - Presenter
+- Comedian
+- Kids Entertainer
+- Childrens Entertainer
+- DBS Certified, 2016
 - UK Equity Member
 - AUS MEAA Member
 - culture
@@ -13,7 +17,7 @@ keywords:
 - Latin American
 - Black
 - Mixed Race
-- Comedian
+
 
 news_keywords:
 - The Royal Opera
@@ -22,6 +26,11 @@ news_keywords:
 - Kasabian
 - Brighton
 - The Disco Bunny
-- children
+- DBS Certified, 2016
+- 2019 best Actors
+- 2020 best Actors 
+
 
 ---
+
+<!--like: "actor"-->

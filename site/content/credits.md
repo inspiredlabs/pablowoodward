@@ -5,8 +5,7 @@ title: Credits
 icon: play
 
 ---
-
-#### Credits
+<!--### Credits-->
 
 <div class="cf f4">
 <table class="collapse"><!-- table table-hover -->

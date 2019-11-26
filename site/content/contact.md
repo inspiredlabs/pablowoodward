@@ -22,7 +22,7 @@ icon: call
 
 #### Booking
 
-Pablo Woodward and the commercial enterprise aspects of The Disco Bunny is presently freelance and open to applications of interest for representation particularly in the United Kingdom, Australia and The United States of America.
+Pablo Woodward and the commercial enterprise aspects of [The Disco Bunny](https://thediscobunny.com/) is presently freelance and open to applications of interest for representation particularly in the United Kingdom, Australia and The United States of America.
 
 If you are interested in representing me under an agents agreement, or having me represent you as a commercial enterprise, I welcome you to contact me.
 
