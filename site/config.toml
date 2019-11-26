@@ -1,3 +1,4 @@
+enableRobotsTXT = true
 # baseurl = "./" # local only
 baseurl = "https://pablowoodward.com/" #{{ .Site.BaseURL }} "/" && netlify
 # relativeURLs = "true" #https://github.com/gohugoio/hugo/issues/985
@@ -14,8 +15,8 @@ disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 
 [Params]
   email = "subject1082@gmail.com"
-  keywords = ["Actor", "Presenter", "Comedian", "Kids Entertainer", "Childrens Entertainer", "DBS Certified, 2016", "UK Equity Member", "AUS MEAA Member", "The Royal Opera", "theatre", "Brighton", "London", "culture", "The Disco Bunny", "Kasabian", "energetic", "Latino", "Latin American", "Black", "Mixed Race", "multilingual", "Latino" ]
-  description = """Ethnically ambiguous probable Latino with an insatiable energy to explore, adventure & learn: Bold Linguistic Artist Extraordinaire.""" #<160 thing for SERP
+  keywords = ["Actor", "Presenter", "Comedian", "Kids Entertainer", "Childrens Entertainer", "2016 DBS Certified", "UK Equity Member", "AUS MEAA Member", "The Royal Opera", "theatre", "Brighton", "London", "culture", "The Disco Bunny", "Kasabian", "energetic", "Latino", "Latin American", "Black", "Mixed Race", "multilingual", "Latino" ]
+  description = """Ethnically ambiguous probable Latino. Insatiable energy to explore, adventure & learn. Bold Linguistic Artist Extraordinaire!""" #<160 thing for SERP
   SiteDescription = "UK Equity Member | AUS MEAA Member"
 
   #linkedin = "theurbanaut"

@@ -1,7 +1,7 @@
 ---
 images: ["https://pablowoodward.com/img/M55128.0122.jpg"]
 title: "Pablo Woodward: UK Equity and AUS MEAA Member"
-description: "Actor, Presenter, Entertainer, DBS Certified, 2016"
+description: "Presenter, Entertainer, 2016 DBS Certified"
 blockquote: "I have skills, qualifications, an open heart, an open mind, and I want to use them all."
 keywords:
 - Actor
