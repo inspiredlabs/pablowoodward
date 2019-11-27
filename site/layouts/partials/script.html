@@ -254,6 +254,7 @@ buttonGroup.addEventListener('click', function(event) {
 
 </script>
 
+
 <!--script>Element.prototype.remove=function(){this.parentElement.removeChild(this);}
 NodeList.prototype.remove=HTMLCollection.prototype.remove=function(){for(var i=this.length-1;i>=0;i--){if(this[i]&&this[i].parentElement){this[i].parentElement.removeChild(this[i]);}}};(function(){var displayOnlineStatus=document.getElementById("online-status"),isOnline=function(){displayOnlineStatus.innerHTML=document.getElementById('iframeOnline').innerHTML;displayOnlineStatus.className="online";document.getElementsByClassName("offline").remove();},isOffline=function(){displayOnlineStatus.innerHTML=document.getElementById('iframeOffline').innerHTML;displayOnlineStatus.className="offline";document.getElementsByClassName("online").remove();};if(window.addEventListener){window.addEventListener("online",isOnline,false);window.addEventListener("offline",isOffline,false);}
 else{document.body.ononline=isOnline;document.body.onoffline=isOffline;};})();window.addEventListener('load',function(){if(navigator.onLine){document.getElementById("online-status").innerHTML=document.getElementById('iframeOnline').innerHTML;document.getElementById("online-status").className="online";}else{document.getElementById("online-status").innerHTML=document.getElementById('iframeOffline').innerHTML;document.getElementById("online-status").className="offline";}});</script-->
@@ -289,5 +290,127 @@ toggleButton.addEventListener( 'click', function() {
   isFlickity = !isFlickity;
 });
 */
+
+</script>
+<!-- <style>
+  /* https://codepen.io/pawelgrzybek/pen/YWqWXJ from: https://pawelgrzybek.com/the-intersection-observer-api-explained/ */
+  p {
+    -webkit-transform: scale(0.75) translateY(3.2rem);
+          transform: scale(0.75) translateY(3.2rem);
+  opacity: .3;
+}
+  
+  @-webkit-keyframes loaded {
+  0% {
+    -webkit-transform: scale(0.75) translateY(3.2rem);
+            transform: scale(0.75) translateY(3.2rem);
+    opacity: .3;
+  }
+  100% {
+    -webkit-transform: none;
+            transform: none;
+    opacity: 1;
+  }
+}
+
+@keyframes loaded {
+  0% {
+    -webkit-transform: scale(0.75) translateY(3.2rem);
+            transform: scale(0.75) translateY(3.2rem);
+    opacity: .3;
+  }
+  100% {
+    -webkit-transform: none;
+            transform: none;
+    opacity: 1;
+  }
+}
+.loaded {
+  animation-delay: 2s;
+  -webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
+  -webkit-animation-name: loaded;
+          animation-name: loaded;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+</style>
+<script>
+  // the callback function that will be fired
+  // when the element apears in the viewport
+  // because it fires on initialization
+  // we have to check for change.isIntersecting parameter
+  function onEntry(entry) {
+    entry.forEach((change) => {
+      if (change.isIntersecting) {
+        change.target.classList.add('loaded');
+      }
+    });
+  }
+
+  // list of options
+  let options = {
+    threshold: [0.5]
+  };
+
+  // instantiate a new Intersection Observer
+  let observer = new IntersectionObserver(onEntry, options);
+
+  // list of iframe
+  let elements = document.querySelectorAll('p');
+
+  // loop through all elements
+  // pass each element to observe method
+  // ES2015 for-of loop can traverse through DOM Elements
+  for (let elm of elements) {
+    observer.observe(elm);
+  }
+</script> -->
+<script>
+
+// the callback function that will be fired
+  // when the element apears in the viewport
+  // because it fires on initialization
+  // we have to check for change.isIntersecting parameter
+  function onEntry(entry) {
+    entry.forEach((change) => {
+      if (change.isIntersecting) {
+        
+        (function(){
+          var iframe = document.getElementsByTagName('iframe');
+          for (var i=0; i<iframe.length; i++) {
+            if(iframe[i].getAttribute('data-src')) {
+              iframe[i].setAttribute('src',iframe[i].getAttribute('data-src'));
+              iframe[i].removeAttribute('data-src'); //use only if you need to remove
+            }
+          }
+        })();
+
+
+      }
+    });
+  }
+
+  // list of options
+  let options = {
+    threshold: [0.5]
+  };
+
+  // instantiate a new Intersection Observer
+  let observer = new IntersectionObserver(onEntry, options);
+
+  // list of iframe
+  let elements = document.querySelectorAll('iframe');
+
+  // loop through all elements
+  // pass each element to observe method
+  // ES2015 for-of loop can traverse through DOM Elements
+  for (let elm of elements) {
+    observer.observe(elm);
+  }
+
+
+
 
 </script>

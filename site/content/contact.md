@@ -6,7 +6,7 @@ icon: call
 
 ---
 
-#### Contact
+### Contact
 
 <div class=tl itemscope itemtype="http://schema.org/Person">
 <ul class="list pa0">
@@ -31,5 +31,5 @@ For artistic projects, ideas, collaborations, invitations to run workshops, to g
 
 Please note, my preferred language is English, but I am fluent in French and Spanish so I welcome you to alternatively contact me in those languages.
 
-<!-- Email: [pablo@pablowoodward.com](mailto:pablo@pablowoodward.com?subject=Seen%20PabloWoodward.com&body=Hi%20Pablo,%0D%0A%20%20%20%20)  
+<!-- Email: [pablo@pablowoodward.com](mailto:pablo@pablowoodward.com?subject=Seen%20PabloWoodward.com&body=Hi%20Pablo,%0D%0A%20%20%20%20)
  -->
