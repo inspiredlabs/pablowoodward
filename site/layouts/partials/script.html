@@ -58,12 +58,13 @@ function removeHash() {
 var carousel = document.querySelector('.carousel');
 var flkty = new Flickity( carousel, {
   prevNextButtons: false,
-  dragThreshold:72,//66
+  dragThreshold:72,//66  
   wrapAround: true,
   selectedAttraction: 0.2,// codepen.io/desandro/pen/aOyMam
   friction: 1,
 	//isInstant: true,		// https://codepen.io/desandro/pen/jzEOZq	  
   pageDots: false,			  
+  //resize: false,		// see: https://flickity.metafizzy.co/options.html#resize
   hash: true,
   on: {
 
@@ -225,12 +226,18 @@ buttonGroup.addEventListener('click', function(event) {
 	
 	
 	function orient() {
-		if (window.innerHeight > window.innerWidth) {
+		
+    function layoutBounce() { 	
+      let number = Math.floor((Math.random()*1000));
+      setTimeout(function(){ flkty.resize(); }, number);
+    };
+    
+    if (window.innerHeight > window.innerWidth) {
 			//alert('portrait');
-			flkty.resize()
+			layoutBounce()
 		} else {
 			//alert('landscape');
-			flkty.resize()
+			layoutBounce()
 		}//if	
 
 	}//orient
@@ -376,6 +383,7 @@ toggleButton.addEventListener( 'click', function() {
   function onEntry(entry) {
     entry.forEach((change) => {
       if (change.isIntersecting) {
+        
         
         (function(){
           var iframe = document.getElementsByTagName('iframe');
