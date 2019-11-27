@@ -5,7 +5,7 @@ baseurl = "https://pablowoodward.com/" #{{ .Site.BaseURL }} "/" && netlify
 languageCode = "en" #Initial configuration reset #languageCode = "en-us"
 title = "Pablo Woodward"
 image = "img/JC1.jpg" #JC1.jpg
-logo = "/favicon.png" #{{ }}
+#logo = "/favicon.png" #DEL, this doesn't render?!
 copyright = "InspiredLabs.co.uk" # © = http://www.theukwebdesigncompany.com/articles/entity-escape-characters.php
 
 # RSS, categories and tags disabled for an easy start
@@ -14,6 +14,7 @@ copyright = "InspiredLabs.co.uk" # © = http://www.theukwebdesigncompany.com/art
 disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 
 [Params]
+  logo = "favicon.png" #{{ with .Site.Params.logo }}{{ . }}{{ end }}
   email = "subject1082@gmail.com"
   keywords = ["Actor", "Presenter", "Comedian", "Kids Entertainer", "Childrens Entertainer", "2016 DBS Certified", "UK Equity Member", "AUS MEAA Member", "The Royal Opera", "theatre", "Brighton", "London", "culture", "The Disco Bunny", "Kasabian", "energetic", "Latino", "Latin American", "Black", "Mixed Race", "multilingual", "Latino" ]
   description = """Ethnically ambiguous probable Latino. Insatiable energy to explore, adventure & learn. Bold Linguistic Artist Extraordinaire!""" #<160 thing for SERP

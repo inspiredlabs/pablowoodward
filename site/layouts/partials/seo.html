@@ -14,9 +14,11 @@
   {{ with .Params.keywords }}
     "keywords": "{{ delimit . ", " }}",
   {{ end -}}
-    "image": {{ .Site.BaseURL | jsonify | safeJS }}favicon.png{{/* with .Params.image }}{{ .Permalink }}{{ end */}},
-    "thumbnailUrl": {{ .Site.BaseURL | jsonify | safeJS }}favicon.png{{/* with .Params.logo }}{{ .Permalink }}{{ end */}},
-
+    {{/* "thumbnailUrl" : {{ apply .Params.images "absURL" "." }}, from: https://discourse.gohugo.io/t/marking-up-json-ld/1154 note: `[...]` */}}
+    "image" : {{ range $i, $e := .Params.images }}{{ if $i }}, {{ end }}{{ $e }}{{ end }},
+    {{ with .Site.Params.logo -}}
+    "thumbnailUrl": "{{ . }}",
+    {{- end }}
     "license": "{{ with .Site.Copyright }}©{{ now.Format "2006"}}, {{ . }}{{ end }}",
     "name": "{{ .Site.Title }} | {{ .Site.Params.SiteDescription }}"
   }
@@ -54,6 +56,9 @@
   "url": "{{ .Permalink }}",
   {{ if not .PublishDate.IsZero }}
   "datePublished": "{{ .PublishDate.Format "2006-01-02T15:04:05-07:00" | safeHTML }}",
+
+  {{/* dateFormat "2006-01-02T15:04:05-07:00" (default .Date (.PublishDate)) */}}
+
   {{ else if not .Date.IsZero }}
   "datePublished": "{{ .Date.Format "2006-01-02T15:04:05-07:00" | safeHTML }}",
   {{ end }}

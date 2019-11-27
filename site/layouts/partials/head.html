@@ -5,10 +5,13 @@
     <!-- https://gtmetrix.com (84% @27.11.2019) -->
     <!-- https://testmysite.io (99% @27.11.2019) -->
     <!-- https://cards-dev.twitter.com/validator Lacks social signals. -->    
-    <!-- https://freetools.seobility.net/en/seocheck (84% @27.11.2019) -->
+    <!-- https://freetools.seobility.net/en/seocheck (87% @27.11.2019) -->
     <!-- https://search.google.com/test/mobile-friendly (!execute iFrame @27.11.2019) -->    
     <!-- https://moz.com/domain-analysis?site=pablowoodward.com Domain Authority: 12 -->
-    <!-- https://search.google.com/structured-data/testing-tool (55 ERRORS, 2 WARNINGS) -->
+    <!-- https://search.google.com/structured-data/testing-tool (FIXME: 55 ERRORS, 2 WARNINGS) -->
+    <!-- https://json-ld.org/playground/ (FIXME: `"image": "https://pablowoodward.com/"favicon.png,`) -->
+
+
     <!-- Algo updates: 
       - Hummingbird update for their search engine algorithms has made keywords much less important than conversational searches.
       - in-article links for references (provide context): https://twitter.com/Marie_Haynes/status/1199307016235364352
@@ -28,9 +31,12 @@
     {{ if (isset .Params "description") }}
     <meta name="description" content="{{ .Params.description }} | {{ if (isset .Site.Params "description") }}{{ .Site.Params.Description }}{{ end }}" />{{ end }}
     <link rel="canonical" href="{{ .Permalink }}" />
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
-    <link rel="apple-touch-icon" href="favicon.png">
-    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ with .Site.Params.logo }}{{ . }}{{ end }}" />
+    <link rel="apple-touch-icon" href="{{ with .Site.Params.logo }}{{ . }}{{ end }}">
+    <link rel="icon" type="image/png" href="{{ with .Site.Params.logo }}{{ . }}{{ end }}">
+    <link rel="icon" type="image/icon" href="favicon.ico">
+
+    
     <!-- <link rel=manifest href=/site.webmanifest> -->
     <link rel=mask-icon href="{{ .Site.BaseURL }}img/circle-play.svg" color="black"><!-- https://developer.yoast.com/safari-pinned-tab-icon-mask-icon/ -->
     <meta name="msapplication-TileColor" content="#eee">
@@ -73,8 +79,8 @@
     <meta property="og:url" content="{{ .Permalink }}" />{{ if (isset .Params "LanguageCode") }}
     <meta property="og:locale" content="{{ .Params.LanguageCode }}" />{{ else}}
     <meta property="og:locale" content="{{ if .Params.LanguageCode }}{{ .Params.LanguageCode }}{{ else }}{{ $.Site.LanguageCode | default "en-gb" }}{{ end }}" />{{ end }}
-    <meta property="og:image" content="{{ .Site.BaseURL }}favicon.png" />
-    <meta property="og:image:secure_url" content="{{ .Site.BaseURL }}favicon.png" />
+    <meta property="og:image" content="{{ range $i, $e := .Params.images }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}" />
+    <meta property="og:image:secure_url" content="{{ range $i, $e := .Params.images }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}" />
 
     <!-- Tachyon Shower -->
     <!-- <link rel="stylesheet" href="https://instantwebapp.netlify.com/css/tachyon.shower.css" /> -->
