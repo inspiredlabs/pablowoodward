@@ -24,8 +24,11 @@
 						<!--h1 class="post-title">{{ .Title }}</h1-->
 
 						<section class="measure mr-auto ml-auto f3 lh-copy pt3">
-							{{ .Content }}
-              <span class="h7 disable-scrolling f6 gray">{{ with .Site.Copyright }}©{{ now.Format "2006"}}, <a href="https://inspiredlabs.co.uk">{{ . }}</a>{{ end }}</span>
+              {{ .Content }}
+
+              {{/* range last 1 .Data.Pages */}}
+              <!-- <span class="h7 disable-scrolling f6 gray">{{ with .Site.Copyright }}©{{ now.Format "2006"}}, <a href="https://inspiredlabs.co.uk">{{ . }}</a>{{ end }}</span> -->
+              {{/* end */}}
 						</section>
 						
 						<!--footer class="post-footer">

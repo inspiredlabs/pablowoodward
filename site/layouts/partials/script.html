@@ -62,7 +62,7 @@ var flkty = new Flickity( carousel, {
   wrapAround: true,
   selectedAttraction: 0.2,// codepen.io/desandro/pen/aOyMam
   friction: 1,
-	//isInstant: true,			  
+	//isInstant: true,		// https://codepen.io/desandro/pen/jzEOZq	  
   pageDots: false,			  
   hash: true,
   on: {
@@ -72,7 +72,6 @@ var flkty = new Flickity( carousel, {
     	//Begin store
     	let uri = window.location.hash.substr(1);
     	let list = document.getElementsByTagName('button');
-
 
     	if (uri == '' ) {
     		//alert('empty');
@@ -164,9 +163,8 @@ buttonGroup.addEventListener('click', function(event) {
 <script>	
 	
 	// revalidate bLazy
-	// the code
 	var bLazy = new Blazy({
-		offset: 1800, // Loads 1800px before visible
+		offset: 1800, // Loads 1800px before visible: http://dinbror.dk/blog/blazy/
 	  success: function(){
 	    updateCounter();
 	  }
@@ -187,7 +185,7 @@ buttonGroup.addEventListener('click', function(event) {
 (function(){
 
 	function retinaBounce() { 	
-		let number = Math.floor((Math.random()*10));
+		let number = Math.floor((Math.random()*1000));
 		setTimeout(function(){ bLazy.revalidate(); }, number);
 		console.log('retinaBounce:' + number);
 	};
@@ -256,9 +254,9 @@ buttonGroup.addEventListener('click', function(event) {
 
 </script>
 
-<script>Element.prototype.remove=function(){this.parentElement.removeChild(this);}
+<!--script>Element.prototype.remove=function(){this.parentElement.removeChild(this);}
 NodeList.prototype.remove=HTMLCollection.prototype.remove=function(){for(var i=this.length-1;i>=0;i--){if(this[i]&&this[i].parentElement){this[i].parentElement.removeChild(this[i]);}}};(function(){var displayOnlineStatus=document.getElementById("online-status"),isOnline=function(){displayOnlineStatus.innerHTML=document.getElementById('iframeOnline').innerHTML;displayOnlineStatus.className="online";document.getElementsByClassName("offline").remove();},isOffline=function(){displayOnlineStatus.innerHTML=document.getElementById('iframeOffline').innerHTML;displayOnlineStatus.className="offline";document.getElementsByClassName("online").remove();};if(window.addEventListener){window.addEventListener("online",isOnline,false);window.addEventListener("offline",isOffline,false);}
-else{document.body.ononline=isOnline;document.body.onoffline=isOffline;};})();window.addEventListener('load',function(){if(navigator.onLine){document.getElementById("online-status").innerHTML=document.getElementById('iframeOnline').innerHTML;document.getElementById("online-status").className="online";}else{document.getElementById("online-status").innerHTML=document.getElementById('iframeOffline').innerHTML;document.getElementById("online-status").className="offline";}});</script>
+else{document.body.ononline=isOnline;document.body.onoffline=isOffline;};})();window.addEventListener('load',function(){if(navigator.onLine){document.getElementById("online-status").innerHTML=document.getElementById('iframeOnline').innerHTML;document.getElementById("online-status").className="online";}else{document.getElementById("online-status").innerHTML=document.getElementById('iframeOffline').innerHTML;document.getElementById("online-status").className="offline";}});</script-->
 
 <!--<script src="{{ .Site.BaseURL }}js/bg-lazyload.js"></script>-->
 <script>
