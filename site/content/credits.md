@@ -14,33 +14,41 @@ icon: play
     - performerIn () */}}
 -->
 
-<section itemscope itemtype="http://schema.org/Book">
-<h1 itemprop="name">The Jungle Book</h1>
-<span>Author: <span itemprop="author">Rudyard Kipling</span></span>
-<span>Category : <span itemprop="genre">children's literature</span></span>
-<a href="http://en.wikipedia.org/wiki/The_Jungle_Book"><span itemprop="url">Detail info<span></a>
-</section>
 
-<div itemscope="" itemtype="http://schema.org/TheaterEvent">
+
+
+
+
+<span itemscope="" itemtype="http://schema.org/TheaterEvent">
   <span itemprop="name">Julius Caesar at Shakespeare's Globe</span>
-  <div itemprop="location" itemscope="" itemtype="http://schema.org/PerformingArtsTheater">
+  <span itemprop="location" itemscope="" itemtype="http://schema.org/PerformingArtsTheater">
     <meta itemprop="name" content="Shakespeare's Globe"/>
     <link itemprop="sameAs" href="http://www.shakespearesglobe.com/"/>
     <meta itemprop="address" content="London, UK"/>
-  </div>
-  <div itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+  </span>
+  <span itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
     <link itemprop="url" href="/examples/ticket/0012301230123"/>
-  </div>
-  <span itemprop="startDate" content="2014-10-01T19:30">Wed 01 October 2014 19:30</span>
-  <div itemprop="workPerformed" itemscope="" itemtype="http://schema.org/CreativeWork">
+  </span>
+  <span itemprop="startDate" content="2017-01-01T00:00">2017</span>
+  <span itemprop="endDate" content="2017-01-01T00:00">2017</span>
+  <span itemprop="availability" itemtype="http://schema.org/LimitedAvailability"></span>
+  <span itemprop="priceCurrency" content="GBP">£</span>
+  <span itemprop="price" content=""></span>
+  <span itemprop="validFrom" content="2017-01-01T00:00">2017</span>
+
+
+  <span itemprop="workPerformed" itemscope="" itemtype="http://schema.org/CreativeWork">
+    <span itemprop="description">Recorded</span>
+    <span itemprop="performer">Pablo Woodward</span>
+
     <link itemprop="sameAs" href="http://en.wikipedia.org/wiki/Julius_Caesar_(play)"/>
     <link itemprop="sameAs" href="http://worldcat.org/entity/work/id/1807288036"/>
-    <div itemprop="creator" itemscope="" itemtype="http://schema.org/Person">
+    <span itemprop="creator" itemscope="" itemtype="http://schema.org/Person">
        <meta itemprop="name" content="William Shakespeare"/>
        <link itemprop="sameAs" href="http://en.wikipedia.org/wiki/William_Shakespeare"/>
-    </div>
-  </div>
-</div>
+    </span>
+  </span>
+</span>
 
 <div class="cf f4">
 <span class="dn">Pablo Woodward</span>
