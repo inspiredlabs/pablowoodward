@@ -27,15 +27,14 @@ icon: play
     <meta itemprop="address" content="London, UK"/>
   </span>
   <span itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
-    <link itemprop="url" href="/examples/ticket/0012301230123"/>
+    <!--link itemprop="url" href="/examples/ticket/0012301230123"/-->
+    <span itemprop="priceCurrency" content="GBP">£</span>
+    <span itemprop="price" content=""></span>
+    <span itemprop="validFrom" content="2017-01-01T00:00">2017</span>
   </span>
   <span itemprop="startDate" content="2017-01-01T00:00">2017</span>
   <span itemprop="endDate" content="2017-01-01T00:00">2017</span>
-  <span itemprop="availability" itemtype="http://schema.org/LimitedAvailability"></span>
-  <span itemprop="priceCurrency" content="GBP">£</span>
-  <span itemprop="price" content=""></span>
-  <span itemprop="validFrom" content="2017-01-01T00:00">2017</span>
-
+  <span itemprop="availability" content="LimitedAvailability" itemtype="http://schema.org/LimitedAvailability"></span>
 
   <span itemprop="workPerformed" itemscope="" itemtype="http://schema.org/CreativeWork">
     <span itemprop="description">Recorded</span>
