@@ -6,19 +6,6 @@ icon: play
 
 ---
 <!--
-### Credits
-{{/* CreativeWork:
-- provider
-  - Organization
-  - Person (Pablo Woodward)
-    - performerIn () */}}
--->
-
-
-
-
-
-
 <span itemscope itemtype="http://schema.org/TheaterEvent">
   <span itemprop="name">Julius Caesar at Shakespeare's Globe</span>
   <span itemprop="location" itemscope itemtype="http://schema.org/PerformingArtsTheater">
@@ -30,7 +17,7 @@ icon: play
 
   </span>
   <span itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
-    <!--link itemprop="url" href="/examples/ticket/0012301230123"/-->
+    !<link itemprop="url" href="/examples/ticket/0012301230123"/>
     <span itemprop="priceCurrency" content="GBP">£</span>
     <span itemprop="price" content></span>
     <span itemprop="validFrom" content="2017-01-01T00:00">2017</span>
@@ -41,11 +28,7 @@ icon: play
   <span itemprop="availability" content="LimitedAvailability" itemtype="http://schema.org/LimitedAvailability"></span>
 
   <span itemprop="workPerformed" itemscope="" itemtype="http://schema.org/CreativeWork">
-    <!--span itemprop="performer" content="actor">Pablo Woodward</span-->
-    <!--span itemprop="description">Recorded</span-->
     <span itemprop="description" content="Recorded">Recorded</span>
-
-
     <link itemprop="sameAs" href="http://en.wikipedia.org/wiki/Julius_Caesar_(play)"/>
     <link itemprop="sameAs" href="http://worldcat.org/entity/work/id/1807288036"/>
     <span itemprop="creator" itemscope="" itemtype="http://schema.org/Person">
@@ -54,6 +37,7 @@ icon: play
     </span>
   </span>
 </span>
+-->
 
 <div class="cf f4">
 <span class="dn">Pablo Woodward</span>
@@ -86,7 +70,7 @@ icon: play
   <span itemprop="temporalCoverage" class="ba b--moon-gray f5 ts1-white bg-light-gray br-pill serif i pa2 ma2">2017</span>
   <span itemprop="spatial" class="ba b--moon-gray f5 ts1-white bg-light-gray br-pill serif i pa2 ml2">Music Video</span>
 </td>
-</tr>
+</tr-->
 <tr class="hover-bg-near-white transition">
 <td class="pt3 pb3">
   <span itemprop="character" class="db b">Jack in The Box</span>
