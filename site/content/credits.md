@@ -25,6 +25,9 @@ icon: play
     <meta itemprop="name" content="Shakespeare's Globe"/>
     <link itemprop="sameAs" href="http://www.shakespearesglobe.com/"/>
     <meta itemprop="address" content="London, UK"/>
+
+    <span itemprop="performer" content="actor">Pablo Woodward</span>
+    <span itemprop="description">Recorded</span>
   </span>
   <span itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
     <!--link itemprop="url" href="/examples/ticket/0012301230123"/-->
@@ -37,8 +40,9 @@ icon: play
   <span itemprop="availability" content="LimitedAvailability" itemtype="http://schema.org/LimitedAvailability"></span>
 
   <span itemprop="workPerformed" itemscope="" itemtype="http://schema.org/CreativeWork">
-    <span itemprop="description">Recorded</span>
-    <span itemprop="performer">Pablo Woodward</span>
+    <!--span itemprop="performer" content="actor">Pablo Woodward</span-->
+    <!--span itemprop="description">Recorded</span-->
+
 
     <link itemprop="sameAs" href="http://en.wikipedia.org/wiki/Julius_Caesar_(play)"/>
     <link itemprop="sameAs" href="http://worldcat.org/entity/work/id/1807288036"/>
