@@ -5,18 +5,49 @@ title: Credits
 icon: play
 
 ---
-<!--### Credits-->
+<!--
+### Credits
+{{/* CreativeWork:
+- provider
+  - Organization
+  - Person (Pablo Woodward)
+    - performerIn () */}}
+-->
 
-<div class="cf f4" itemscope itemtype="https://schema.org/CreativeWork">
-<span itemprop="actor" class="dn">Pablo Woodward</span>
+<section itemscope itemtype="http://schema.org/Book">
+<h1 itemprop="name">The Jungle Book</h1>
+<span>Author: <span itemprop="author">Rudyard Kipling</span></span>
+<span>Category : <span itemprop="genre">children's literature</span></span>
+<a href="http://en.wikipedia.org/wiki/The_Jungle_Book"><span itemprop="detail">Detail info<span></a>
+</section>
+
+<div class="cf f4">
+<span class="dn">Pablo Woodward</span>
 <table class="collapse"><!-- table table-hover -->
 <tbody>
 <tr class="hover-bg-near-white transition">
 <td class="pt3 pb3">
+  <itemscope itemtype="http://schema.org/CreativeWork">
+  <span itemprop="name" class="black">In Love with a Psycho by Kasabian</span>
+  <span itemprop="actor" itemscope itemtype="http://schema.org/Person">
+    <span itemprop="name" class="db b">The Disco Bunny</span>
+  </span>
+  <span itemprop="productionCompany" itemscope itemtype="http://schema.org/Organization">
+    <span class="db ttu tracked fw4" itemprop="name">My Accomplice</span>
+  </span>
+  <span class="db ttu tracked-mega f5 fw5 mb2" itemprop="producer">W.I.Z.</span>
+  <span itemprop="temporalCoverage" class="ba b--moon-gray f5 ts1-white bg-light-gray br-pill serif i pa2 ma2">2017</span>
+  <span itemprop="spatial" class="ba b--moon-gray f5 ts1-white bg-light-gray br-pill serif i pa2 ml2">Music Video</span>
+</td>
+</tr>
+</tbody>
+</table>
+<!--tr class="hover-bg-near-white transition">
+<td class="pt3 pb3">
   <span itemprop="character" class="db b">The Disco Bunny</span>
   <span itemprop="CreativeWork" class="black">In Love with a Psycho by Kasabian</span>
   <span itemprop="publisher" class="db ttu tracked fw4">My Accomplice</span>
-  <!-- sourceOrganization, contributor, editor -->
+  <!-- sourceOrganization, contributor, editor --
   <span itemprop="producer" class="db ttu tracked-mega f5 fw5 mb2">W.I.Z.</span>
   <span itemprop="temporalCoverage" class="ba b--moon-gray f5 ts1-white bg-light-gray br-pill serif i pa2 ma2">2017</span>
   <span itemprop="spatial" class="ba b--moon-gray f5 ts1-white bg-light-gray br-pill serif i pa2 ml2">Music Video</span>
@@ -480,5 +511,5 @@ icon: play
   <span itemprop="spatial" class="ba b--moon-gray f5 ts1-white bg-light-gray br-pill serif i pa2 ml2">Film</span></td>
 </tr>
 </tbody>
-</table>
+</table-->
 </div>
