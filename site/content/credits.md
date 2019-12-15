@@ -19,29 +19,31 @@ icon: play
 
 
 
-<span itemscope="" itemtype="http://schema.org/TheaterEvent">
+<span itemscope itemtype="http://schema.org/TheaterEvent">
   <span itemprop="name">Julius Caesar at Shakespeare's Globe</span>
-  <span itemprop="location" itemscope="" itemtype="http://schema.org/PerformingArtsTheater">
+  <span itemprop="location" itemscope itemtype="http://schema.org/PerformingArtsTheater">
     <meta itemprop="name" content="Shakespeare's Globe"/>
     <link itemprop="sameAs" href="http://www.shakespearesglobe.com/"/>
     <meta itemprop="address" content="London, UK"/>
 
     <span itemprop="performer" content="actor">Pablo Woodward</span>
-    <span itemprop="description">Recorded</span>
+
   </span>
   <span itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
     <!--link itemprop="url" href="/examples/ticket/0012301230123"/-->
     <span itemprop="priceCurrency" content="GBP">£</span>
-    <span itemprop="price" content=""></span>
+    <span itemprop="price" content></span>
     <span itemprop="validFrom" content="2017-01-01T00:00">2017</span>
   </span>
+
   <span itemprop="startDate" content="2017-01-01T00:00">2017</span>
-  <span itemprop="endDate" content="2017-01-01T00:00">2017</span>
+  <span itemprop="endDate" content="2017-01-01T00:01">2017</span>
   <span itemprop="availability" content="LimitedAvailability" itemtype="http://schema.org/LimitedAvailability"></span>
 
   <span itemprop="workPerformed" itemscope="" itemtype="http://schema.org/CreativeWork">
     <!--span itemprop="performer" content="actor">Pablo Woodward</span-->
     <!--span itemprop="description">Recorded</span-->
+    <span itemprop="description" content="Recorded">Recorded</span>
 
 
     <link itemprop="sameAs" href="http://en.wikipedia.org/wiki/Julius_Caesar_(play)"/>
