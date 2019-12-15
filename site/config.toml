@@ -24,7 +24,7 @@ disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
   #cover = "/img/background-cover.jpg"
 
 [author]
-  type = "actor" #https://www.mandy.com/actor/profile/pablowoodward
+  type = "person" #https://www.mandy.com/actor/profile/pablowoodward
   name = "Pablo Woodward"
   email = "subject1082@gmail.com"
   image = "https://pablowoodward.com/M55128.0122.jpg" #M55128.0122.jpg, M55128.0122.jpg, JC1.jpg, favicon.png
