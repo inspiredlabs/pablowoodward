@@ -48,21 +48,6 @@ icon: play
 <span class="dn">Pablo Woodward</span>
 <table class="collapse"><!-- table table-hover -->
 <tbody>
-<!--tr class="hover-bg-near-white transition">
-<td class="pt3 pb3">
-  <itemscope itemtype="http://schema.org/CreativeWork">
-  <span itemprop="name" class="black">In Love with a Psycho by Kasabian</span>
-  <span itemprop="actor" itemscope itemtype="http://schema.org/Person">
-    <span itemprop="name" class="db b">The Disco Bunny</span>
-  </span>
-  <span itemprop="productionCompany" itemscope itemtype="http://schema.org/Organization">
-    <span class="db ttu tracked fw4" itemprop="name">My Accomplice</span>
-  </span>
-  <span class="db ttu tracked-mega f5 fw5 mb2" itemprop="producer">W.I.Z.</span>
-  <span itemprop="temporalCoverage" class="ba b--moon-gray f5 ts1-white bg-light-gray br-pill serif i pa2 ma2">2017</span>
-  <span itemprop="spatial" class="ba b--moon-gray f5 ts1-white bg-light-gray br-pill serif i pa2 ml2">Music Video</span>
-</td>
-</tr></tbody></table-->
 
 
 <tr class="hover-bg-near-white transition">
@@ -74,7 +59,7 @@ icon: play
 
   <span itemscope itemtype="http://schema.org/CreativeWork">
     <span itemprop="name" class="black">In Love with a Psycho by Kasabian</span>
-    <span itemprop="productionCompany" itemscope itemtype="http://schema.org/Organization">
+    <span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <span class="db ttu tracked fw4" itemprop="name">My Accomplice</span>
     </span>
     <!-- sourceOrganization, contributor, editor -->
