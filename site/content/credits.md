@@ -6,6 +6,11 @@ icon: play
 
 ---
 <!--
+
+`sameAs`: https://stackoverflow.com/questions/33042229/url-vs-sameas-schema-org#33046277
+> Schema.org cannot expect everything to be clustered together nicely on every webpage: https://stackoverflow.com/questions/28888190/schema-org-organization-url-logo-in-one-place-and-social-links-in-another
+
+
 <span itemscope itemtype="http://schema.org/TheaterEvent">
   <span itemprop="name">Julius Caesar at Shakespeare's Globe</span>
   <span itemprop="location" itemscope itemtype="http://schema.org/PerformingArtsTheater">
@@ -65,15 +70,23 @@ icon: play
   <span itemprop="actor" itemscope itemtype="http://schema.org/Person">
     <span itemprop="name" class="db b">The Disco Bunny</span>
   </span>
-  <itemscope itemtype="http://schema.org/CreativeWork">
-  <span itemprop="name" class="black">In Love with a Psycho by Kasabian</span>
-  <span itemprop="productionCompany" itemscope itemtype="http://schema.org/Organization">
-    <span class="db ttu tracked fw4" itemprop="name">My Accomplice</span>
+
+
+  <span itemscope itemtype="http://schema.org/CreativeWork">
+    <span itemprop="name" class="black">In Love with a Psycho by Kasabian</span>
+    <span itemprop="productionCompany" itemscope itemtype="http://schema.org/Organization">
+      <span class="db ttu tracked fw4" itemprop="name">My Accomplice</span>
+    </span>
+    <!-- sourceOrganization, contributor, editor -->
+    <span itemprop="producer" class="db ttu tracked-mega f5 fw5 mb2">W.I.Z.</span>
+    <span itemprop="temporalCoverage" class="ba b--moon-gray f5 ts1-white bg-light-gray br-pill serif i pa2 ma2">2017</span>
+    <span itemprop="spatial" class="ba b--moon-gray f5 ts1-white bg-light-gray br-pill serif i pa2 ml2">Music Video</span>
+
   </span>
-  <!-- sourceOrganization, contributor, editor -->
-  <span itemprop="producer" class="db ttu tracked-mega f5 fw5 mb2">W.I.Z.</span>
-  <span itemprop="temporalCoverage" class="ba b--moon-gray f5 ts1-white bg-light-gray br-pill serif i pa2 ma2">2017</span>
-  <span itemprop="spatial" class="ba b--moon-gray f5 ts1-white bg-light-gray br-pill serif i pa2 ml2">Music Video</span>
+
+
+
+
 </td>
 </tr>
 
