@@ -14,7 +14,8 @@ icon: call
   <li class=ml0><span itemprop="telephone">Mobile: <a href="tel:+44759330758407" content="+44759330758407">+44&nbsp;7593 307&nbsp;584&nbsp;07</a></span>
 </li>
   <li class=ml0>
-    <span itemprop="contactOption">WhatsApp: <a href="intent://send/44759330758407#Intent;scheme=smsto;package=com.whatsapp;action=android.intent.action.SENDTO;end">+44&nbsp;7593 307&nbsp;584&nbsp;07</a></span>
+    <!--itemprop="contactOption"-->
+    <span>WhatsApp: <a href="intent://send/44759330758407#Intent;scheme=smsto;package=com.whatsapp;action=android.intent.action.SENDTO;end">+44&nbsp;7593 307&nbsp;584&nbsp;07</a></span>
   </li>
 
   <li class=ml0>
@@ -22,7 +23,8 @@ icon: call
   </li>
 
   <li class=ml0>
-    <span itemprop="facebook">Facebook: <a href="https://www.facebook.com/pablo.woodward">/pablo.woodward</a></span>
+    <!--itemprop="facebook"-->
+    <span>Facebook: <a href="https://www.facebook.com/pablo.woodward">/pablo.woodward</a></span>
   </li>
 
   <li class=ml0>
