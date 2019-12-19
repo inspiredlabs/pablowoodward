@@ -26,6 +26,7 @@ disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 [author]
   type = "person" #https://www.mandy.com/actor/profile/pablowoodward
   name = "Pablo Woodward"
+  itemid = "#pablowoodward"
   email = "subject1082@gmail.com"
   image = "https://pablowoodward.com/M55128.0122.jpg" #M55128.0122.jpg, M55128.0122.jpg, JC1.jpg, favicon.png
   homepage = "https://pablowoodward.com/"

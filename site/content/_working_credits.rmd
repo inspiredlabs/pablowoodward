@@ -51,11 +51,9 @@ icon: play
 
 
 <tr class="hover-bg-near-white transition">
-  <td class="pt3 pb3" itemscope itemtype="http://schema.org/CreativeWork" itemid="#pablowoodward">
+<td class="pt3 pb3"itemscope itemtype="http://schema.org/CreativeWork">
 
-    <span itemprop="character" itemscope itemtype="http://schema.org/Person">
-      <span class="db b" itemprop="name">The Disco Bunny</span>
-    </span>
+    <span itemprop="character" itemscope itemtype="http://schema.org/Person"><span class="db b" itemprop="name">The Disco Bunny</span></span>
 
     <span itemprop="name" class="black">In Love with a Psycho by Kasabian</span>
     <span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -66,7 +64,7 @@ icon: play
     <span itemprop="temporalCoverage" class="ba b--moon-gray f5 ts1-white bg-light-gray br-pill serif i pa2 ma2">2017</span>
     <span itemprop="spatial" class="ba b--moon-gray f5 ts1-white bg-light-gray br-pill serif i pa2 ml2">Music Video</span>
 
-  </td>
+</td>
 </tr>
 
 <tr class="hover-bg-near-white transition">
