@@ -8,7 +8,7 @@ icon: call
 
 ### Contact
 
-<div class=tl itemscope itemtype="http://schema.org/Person" itemid="#pablowoodward">
+<div class=tl itemscope itemtype="http://schema.org/Person" itemid="{{ with .Site.Author.itemid }}{{ . }}{{ end }}">
 <ul class="list pa0">
   <li class=ml0><span itemprop="name" class=dn>Pablo Woodward</span></li>
   <li class=ml0><span itemprop="telephone">Mobile: <a href="tel:+44759330758407" content="+44759330758407">+44&nbsp;7593 307&nbsp;584&nbsp;07</a></span>
