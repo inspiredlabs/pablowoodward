@@ -32,7 +32,7 @@
   "mainEntityOfPage": {
     "@type": "WebPage",
     {{/*"$id": "{{ with .Site.Author.itemid }}{{ . }}{{ end }}"*/}}
-    "@id": "{{ .Permalink }}"
+    "$id": "{{ .Site.BaseURL }}"
   },
   {{ if ge (.Param "lua.image.width") 696 }}
     "image": {
@@ -84,7 +84,7 @@
   "author": {
     "@type": "{{ with .Site.Author.type }}{{ . }}{{ end }}",
     "name": "{{ with .Site.Author.name }}{{ . }}{{ end }}",
-    "$id": "{{ with .Site.Author.itemid }}{{ . }}{{ end }}"
+    "$id": "{{ .Site.BaseURL }}"
   },
   "description": {{ .Description | jsonify | safeJS  }}
   }

@@ -51,7 +51,7 @@ icon: play
 
 
 <tr class="hover-bg-near-white transition">
-  <td class="pt3 pb3" itemscope itemtype="http://schema.org/CreativeWork" itemid="#pablowoodward">
+  <td class="pt3 pb3" itemscope itemtype="http://schema.org/CreativeWork" itemid="https://pablowoodward.com">
 
     <span itemprop="character" itemscope itemtype="http://schema.org/Person">
       <span class="db b" itemprop="name">The Disco Bunny</span>
