@@ -6,8 +6,7 @@
   "url": {{ .Site.BaseURL | jsonify | safeJS }},
       "author": {
         "@type": "{{ with .Site.Author.type }}{{ . }}{{ end }}",
-        "name": "{{ with .Site.Author.name }}{{ . }}{{ end }}",
-        "$id": "{{ with .Site.Author.itemid }}{{ . }}{{ end }}"
+        "name": "{{ with .Site.Author.name }}{{ . }}{{ end }}"
       },
   {{ with .Site.Params.description }}
     "description": {{ . | jsonify | safeJS  }},
@@ -32,8 +31,8 @@
   "headline": "{{ .Title }}",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "$id": "{{ with .Site.Author.itemid }}{{ . }}{{ end }}"
-    {{/* "@id": "{{ .Permalink }}" */}}
+    {{/*"$id": "{{ with .Site.Author.itemid }}{{ . }}{{ end }}"*/}}
+    "@id": "{{ .Permalink }}"
   },
   {{ if ge (.Param "lua.image.width") 696 }}
     "image": {
