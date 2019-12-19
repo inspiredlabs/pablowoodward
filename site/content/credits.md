@@ -52,12 +52,25 @@ icon: play
 
 <tr class="hover-bg-near-white transition">
   <td class="pt3 pb3" itemscope itemtype="http://schema.org/CreativeWork" itemid="https://pablowoodward.com">
-
     <span itemprop="character" itemscope itemtype="http://schema.org/Person">
       <span class="db b" itemprop="name">The Disco Bunny</span>
     </span>
-
     <span itemprop="name" class="black">In Love with a Psycho by Kasabian</span>
+    <span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <span class="db ttu tracked fw4" itemprop="name">Zebedee Productions</span>
+    </span>
+    <span itemprop="producer" itemtype="http://schema.org/Organization" class="db ttu tracked-mega f5 fw5 mb2">Zoe Wellman</span>
+    <span itemprop="temporalCoverage" class="ba b--moon-gray f5 ts1-white bg-light-gray br-pill serif i pa2 ma2">2016</span>
+    <span itemprop="spatial" class="ba b--moon-gray f5 ts1-white bg-light-gray br-pill serif i pa2 ml2">Site Specific</span>
+  </td>
+</tr>
+
+<tr class="hover-bg-near-white transition">
+  <td class="pt3 pb3" itemscope itemtype="http://schema.org/CreativeWork" itemid="https://pablowoodward.com">
+    <span itemprop="character" itemscope itemtype="http://schema.org/Person">
+      <span class="db b" itemprop="name">Jack in The Box</span>
+    </span>
+    <span itemprop="name" class="black">Twisted Tea Party</span>
     <span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <span class="db ttu tracked fw4" itemprop="name">My Accomplice</span>
     </span>
@@ -65,21 +78,22 @@ icon: play
     <span itemprop="producer" itemtype="http://schema.org/Organization" class="db ttu tracked-mega f5 fw5 mb2">W.I.Z.</span>
     <span itemprop="temporalCoverage" class="ba b--moon-gray f5 ts1-white bg-light-gray br-pill serif i pa2 ma2">2017</span>
     <span itemprop="spatial" class="ba b--moon-gray f5 ts1-white bg-light-gray br-pill serif i pa2 ml2">Music Video</span>
-
   </td>
 </tr>
 
-<tr class="hover-bg-near-white transition">
-<td class="pt3 pb3">
-  <span itemprop="character" class="db b">The Disco Bunny</span>
-  <span itemprop="CreativeWork" class="black">In Love with a Psycho by Kasabian</span>
-  <span itemprop="publisher" class="db ttu tracked fw4">My Accomplice</span>
-  <!-- sourceOrganization, contributor, editor -->
-  <span itemprop="producer" class="db ttu tracked-mega f5 fw5 mb2">W.I.Z.</span>
-  <span itemprop="temporalCoverage" class="ba b--moon-gray f5 ts1-white bg-light-gray br-pill serif i pa2 ma2">2017</span>
-  <span itemprop="spatial" class="ba b--moon-gray f5 ts1-white bg-light-gray br-pill serif i pa2 ml2">Music Video</span>
-</td>
-</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
 <tr class="hover-bg-near-white transition">
 <td class="pt3 pb3">
   <span itemprop="character" class="db b">Jack in The Box</span>
