@@ -64,20 +64,6 @@ icon: play
   </td>
 </tr>
 
-<tr class="hover-bg-near-white transition">
-  <td class="pt3 pb3" itemscope itemtype="http://schema.org/CreativeWork">
-    <span itemprop="character" itemscope itemtype="http://schema.org/Person">
-      <span class="db b" itemprop="name" itemid="https://pablowoodward.com">Jack in The Box</span>
-    </span>
-    <span itemprop="name" class="black">Twisted Tea Party</span>
-    <span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <span class="db ttu tracked fw4" itemprop="name">Zebedee Productions</span>
-    </span>
-    <span itemprop="producer" itemtype="http://schema.org/Organization" class="db ttu tracked-mega f5 fw5 mb2">Zoe Wellman</span>
-    <span itemprop="temporalCoverage" class="ba b--moon-gray f5 ts1-white bg-light-gray br-pill serif i pa2 ma2">2016</span>
-    <span itemprop="spatial" class="ba b--moon-gray f5 ts1-white bg-light-gray br-pill serif i pa2 ml2">Site Specific</span>
-  </td>
-</tr>
 
 
 <tr class="hover-bg-near-white transition">
@@ -91,6 +77,7 @@ icon: play
   <span itemprop="temporalCoverage" class="ba b--moon-gray f5 ts1-white bg-light-gray br-pill serif i pa2 ma2">2016</span>
   <span itemprop="spatial" class="ba b--moon-gray f5 ts1-white bg-light-gray br-pill serif i pa2 ml2">Site Specific</span></td>
 </tr>
+
 <tr class="hover-bg-near-white transition">
 <td class="pt3 pb3" itemscope itemtype="http://schema.org/CreativeWork">
   <span itemprop="character" itemscope itemtype="http://schema.org/Person">

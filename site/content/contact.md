@@ -10,16 +10,12 @@ icon: call
 
 <div class=tl itemscope itemtype="http://schema.org/Person" itemid="https://pablowoodward.com">
 <ul class="list pa0">
-  <li class=ml0><span itemprop="name" class=dn>Pablo Woodward</span></li>
+  <li class=ml0><span itemprop="name" class=dn>Pablo Woodward</span> via <span itemprop="email"><a href="mailto:subject1082@gmail.com?subject=Seen%20PabloWoodward.com&body=Hi%20Pablo,%0D%0A%20%20%20%20">email</a></span></li>
   <li class=ml0><span itemprop="telephone">Mobile: <a href="tel:+44759330758407" content="+44759330758407">+44&nbsp;7593 307&nbsp;584&nbsp;07</a></span>
 </li>
   <li class=ml0>
     <!--itemprop="contactOption"-->
     <span>WhatsApp: <a href="intent://send/44759330758407#Intent;scheme=smsto;package=com.whatsapp;action=android.intent.action.SENDTO;end">+44&nbsp;7593 307&nbsp;584&nbsp;07</a></span>
-  </li>
-
-  <li class=ml0>
-    <span itemprop="email">Email: <a href="mailto:subject1082@gmail.com?subject=Seen%20PabloWoodward.com&body=Hi%20Pablo,%0D%0A%20%20%20%20">subject1082@gmail.com</a></span>
   </li>
 
   <li class=ml0>
