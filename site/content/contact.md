@@ -10,7 +10,7 @@ icon: call
 
 <div class=tl itemscope itemtype="http://schema.org/Person" itemid="https://pablowoodward.com">
 <ul class="list pa0">
-	<li class=ml0><span itemprop="email">email: <a href="mailto:pablowoodward.com@PabloWoodward.com?subject=Seen%20PabloWoodward.com&body=Hi%20Pablo,%0D%0A%20%20%20%20">Pablo Woodward</a></span>
+	<li class=ml0><span itemprop="email">email: <a href="mailto:pablo@PabloWoodward.com?subject=Seen%20PabloWoodward.com&body=Hi%20Pablo,%0D%0A%20%20%20%20">Pablo Woodward</a></span>
 </li>
   <li class=ml0><span itemprop="telephone">Mobile: <a href="tel:+44759330758407" content="+44759330758407">+44&nbsp;7593 307&nbsp;584&nbsp;07</a></span>
 </li>
@@ -28,6 +28,11 @@ icon: call
     <span itemprop="url">Spotlight: <a href="https://www.spotlight.com/interactive/cv/7015-6725-9646">Pablo Woodward</a></span>
   </li>
   <!--<li class=ml0><span itemprop="url">Vimeo: <a href="https://vimeo.com/132351634">Reel, June 2015</a></span></li>-->
+
+<!--
+todo: sameAs fragment:  
+https://www.instagram.com/p/BBW6DIVsRkL/
+-->
 </ul>
 </div>
 
