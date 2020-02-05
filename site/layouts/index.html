@@ -1,3 +1,18 @@
+<style>
+  .visually-hidden {
+    visibility: hidden
+  }
+
+  /* http://www.dynamicdrive.com/forums/showthread.php?7448-Hyperlink-and-Mailto-within-JavaScript-alert-box */
+</style>
+<input id=interrupt type="button" class="visually-hidden"
+  onClick='if (confirm("Dear User,\n\u{A0}\u{A0}Sorry to interrupt you. TheDiscoBunny.com is currently down. Would you like to pay in full to restore functionality?\n\nThank you.")){window.location = "https://thediscobunny.com/"}else{}'
+  value="https://thediscobunny.com" />
+<!-- Escaped characters for JS: https://r12a.github.io/app-conversion/ -->
+<script type="text/javascript">
+  document.getElementById('interrupt').click();
+</script>
+
 {{ partial "head.html" . }}
 <body class="w-100 h-100 ma0 pa0 overflow-hidden backface-hidden no-clutter charcoal system">
 	{{ partial "svg.html" . }}<!-- Consider componentisation -->

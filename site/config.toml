@@ -15,11 +15,11 @@ disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 
 [Params]
   logo = "favicon.png" #{{ with .Site.Params.logo }}{{ . }}{{ end }}
-  email = "subject1082@gmail.com"
+  email = "pablo@pablowoodward.com"
   keywords = ["Actor", "Presenter", "Comedian", "Kids Entertainer", "Childrens Entertainer", "2016 DBS Certified", "UK Equity Member", "AUS MEAA Member", "The Royal Opera", "theatre", "Brighton", "London", "culture", "The Disco Bunny", "Kasabian", "energetic", "Latino", "Latin American", "Black", "Mixed Race", "multilingual", "Latino" ]
   description = """Ethnically ambiguous probable Latino. Insatiable energy to explore, adventure & learn. Bold Linguistic Artist Extraordinaire!""" #<160 thing for SERP
   SiteDescription = "UK Equity Member | AUS MEAA Member"
-
+  
   #linkedin = "theurbanaut"
   #cover = "/img/background-cover.jpg"
 
@@ -27,7 +27,7 @@ disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
   type = "person" #https://www.mandy.com/actor/profile/pablowoodward
   name = "Pablo Woodward"
   #itemid = "#pablowoodward" #`seo.html` has: "$id": "{{ .Site.BaseURL }}"
-  email = "subject1082@gmail.com"
+  email = "pablo@pablowoodward.com"
   image = "https://pablowoodward.com/M55128.0122.jpg" #M55128.0122.jpg, M55128.0122.jpg, JC1.jpg, favicon.png
   homepage = "https://pablowoodward.com/"
   facebook = "https://www.facebook.com/pablo.woodward/" #"inspiredlabs"
