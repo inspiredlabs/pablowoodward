@@ -103,7 +103,7 @@ var flkty = new Flickity( carousel, {
 
     		
     	}//for
-    	//retinaBounce();    	    	
+    	//bLazy.revalidate();;    	    	
     }//ready
   }//on
   
@@ -142,6 +142,11 @@ flkty.on('select', function() {
     previousSelectedButton.classList.remove('is-selected');
     selectedButton.classList.add('is-selected');
 });
+
+flkty.on('settle', function (index) {
+  bLazy.revalidate();;//console.log('Flickity settled at ' + index);
+});
+
 buttonGroup.addEventListener('click', function(event) {
   if (!matchesSelector(event.target, '.button')) {
     return;
@@ -151,21 +156,12 @@ buttonGroup.addEventListener('click', function(event) {
   flkty.select(index, false, true);
 });
 </script>
-<script>
-	(function(){
-		var href=document.getElementsByTagName('a');
-		for( var i=0; i<href.length; i++ ) {
-			href[i].ondragstart=function() {
-				return false;
-			}
-		}
-	})();
-</script>
+
 <script>	
 	
 	// revalidate bLazy
 	var bLazy = new Blazy({
-		offset: 1800, // Loads 1800px before visible: http://dinbror.dk/blog/blazy/
+		offset: 640,  //Loads 8px before visible: http://dinbror.dk/blog/blazy/
 	  success: function(){
 	    updateCounter();
 	  }
@@ -182,29 +178,24 @@ buttonGroup.addEventListener('click', function(event) {
 	
 </script>
 <script>
+  
+  /*
+  (function(){
 
-(function(){
+    let section = document.querySelectorAll("section");
+    
+    section.forEach(function(elem) {
+      elem.addEventListener("mouseover", retinaBounce);
+      elem.addEventListener("touchstart", retinaBounce);
+    });
+    
+  })();
 
-	function retinaBounce() { 	
-		let number = Math.floor((Math.random()*1000));
-		setTimeout(function(){ bLazy.revalidate(); }, number);
-		console.log('retinaBounce:' + number);
-	};
-
-	let section = document.querySelectorAll("section");
-	
-	section.forEach(function(elem) {
-		elem.addEventListener("mouseover", retinaBounce);
-		elem.addEventListener("touchstart", retinaBounce);
-	});
-	
+  */
+  
 	// https://stackoverflow.com/questions/40956717/how-to-addeventlistener-to-multiple-elements-in-a-single-line:
 	// elementsArray.forEach(el => el.addEventListener('input', functionThatDoesStuff))
 	
-	
-})();
-
-
 
 (function(){
 	
@@ -228,7 +219,7 @@ buttonGroup.addEventListener('click', function(event) {
 	function orient() {
 		
     function layoutBounce() { 	
-      let number = Math.floor((Math.random()*1000));
+      let number = Math.floor((Math.random()*100));
       setTimeout(function(){ flkty.resize(); }, number);
     };
     
@@ -374,8 +365,9 @@ toggleButton.addEventListener( 'click', function() {
     observer.observe(elm);
   }
 </script> -->
-<script>
 
+<!--script>
+// Removed for this: UpUp.debug();
 // the callback function that will be fired
   // when the element apears in the viewport
   // because it fires on initialization
@@ -420,5 +412,54 @@ toggleButton.addEventListener( 'click', function() {
 
 
 
+
+
+</script-->
+
+<!-- This is our simple implementation of UpUp for this site <script src="upup.min.js"> -->
+<script>
+  (function (o) { "use strict"; var e = navigator.serviceWorker; if (!e) return this.UpUp = null, o; var i = { "service-worker-url": "upup.sw.min.js", "registration-options": {} }, s = !1, n = "font-weight: bold; color: #00f;"; this.UpUp = { start: function (t) { this.addSettings(t), e.register(i["service-worker-url"], i["registration-options"]).then(function (t) { s && console.log("Service worker registration successful with scope: %c" + t.scope, n), (t.installing || e.controller || t.active).postMessage({ action: "set-settings", settings: i }) }).catch(function (t) { s && console.log("Service worker registration failed: %c" + t, n) }) }, addSettings: function (e) { "string" == typeof (e = e || {}) && (e = { content: e }), ["content", "content-url", "assets", "service-worker-url", "cache-version"].forEach(function (t) { e[t] !== o && (i[t] = e[t]) }), e.scope !== o && (i["registration-options"].scope = e.scope) }, debug: function (t) { s = !(0 < arguments.length) || !!t } } }).call(this);
+  // Let's turn on debugging messages
+  UpUp.debug();
+
+  // Let's start UpUp with some basic settings
+  UpUp.start({
+    'content-url': 'index.html'
+    , 'assets': ['img/JC1.jpg', 'img/2015G.jpg', 'img/2015L.jpg', 'img/M55128.0122.jpg']
+    //, 'cache-version': 'v1'
+  });
+
+
+  //iffe:
+  (function () {
+
+    function hideOffline() {
+      let hide = document.querySelectorAll('[data-hide]');
+      hide.forEach(function output(item, index, array) {
+        if (navigator.onLine) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+        //console.log(index, item);
+      })
+    };
+
+    window.addEventListener('online', function () {
+      hideOffline()
+      bLazy.revalidate();
+    }, false);
+
+    window.addEventListener('offline', function () {
+      hideOffline()
+      bLazy.revalidate();
+    }, false);
+
+    window.addEventListener('load', function (e) {
+      hideOffline()
+      bLazy.revalidate();
+    }, false);
+
+  })();
 
 </script>

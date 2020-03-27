@@ -24,60 +24,7 @@ icon: info
 
 ### Stats
 
-<div class="cf f4">
-<table class="fl tl w-100 w-50-ns mb5 collapse">
-	<tbody>
-	<tr class="hover-bg-near-white transition">
-		<td class="gray tr fw4 pr2 w-50 w-25-ns">Location:</td><td class="fw5 pl2 w-50 w-25-ns">London, UK</td>
-	</tr>
-	<tr class="hover-bg-near-white transition">
-		<td class="gray tr fw4 pr2 w-50 w-25-ns">Height:</td><td class="fw5 pl2 w-50 w-25-ns">5'8" (172cm)</td>
-	</tr>
-	<tr class="hover-bg-near-white transition">
-		<td class="gray tr fw4 pr2 w-50 w-25-ns">Weight:</td><td class="fw5 pl2 w-50 w-25-ns">11st. (70kg)</td>
-	</tr>
-	<tr class="hover-bg-near-white transition">
-		<td class="gray tr fw4 pr2 w-50 w-25-ns">Playing Age:</td><td class="fw5 pl2 w-50 w-25-ns">26 – 40 years</td>
-	</tr>
-	<tr class="hover-bg-near-white transition">
-		<td class="gray tr fw4 pr2 w-50 w-25-ns">Other:</td><td class="fw5 pl2 w-50 w-25-ns">Equity</td>
-	</tr>
-	<tr class="hover-bg-near-white transition">
-		<td class="gray tr fw4 pr2 w-50 w-25-ns">Appearance:</td><td class="fw5 pl2 w-50 w-25-ns">Black-Other&nbsp;Areas, Latin&nbsp;American, Mixed&nbsp;Race</td>
-	</tr>
-	</tbody>
-</table>
-
-<table class="fl tl w-100 w-50-ns mb5 collapse">
-	<tbody>
-		<tr class="hover-bg-near-white transition">
-			<td class="gray tr fw4 pr2 w-50 w-25-ns">Eye Colour:</td>
-			<td class="fw5 pl2 w-50 w-25-ns">Brown</td>
-		</tr>
-		<tr class="hover-bg-near-white transition">
-			<td class="gray tr fw4 pr2 w-50 w-25-ns">Hair Colour:</td>
-			<td class="fw5 pl2 w-50 w-25-ns">Black</td>
-		</tr>
-		<tr class="hover-bg-near-white transition">
-			<td class="gray tr fw4 pr2 w-50 w-25-ns">Hair Length:</td>
-			<td class="fw5 pl2 w-50 w-25-ns">Short</td>
-		</tr>
-		<tr class="hover-bg-near-white transition">
-			<td class="gray tr fw4 pr2 w-50 w-25-ns">Facial Hair:</td>
-			<td class="fw5 pl2 w-50 w-25-ns">Goatee</td>
-		</tr>
-		<tr class="hover-bg-near-white transition">
-			<td class="gray tr fw4 pr2 w-50 w-25-ns">Voice Character:</td>
-			<td class="fw5 pl2 w-50 w-25-ns">Natural</td>
-		</tr>
-		<tr class="hover-bg-near-white transition">
-			<td class="gray tr fw4 pr2 w-50 w-25-ns">Voice Quality:</td>
-			<td class="fw5 pl2 w-50 w-25-ns">Strong</td>
-		</tr>
-	</tbody>
-</table>
-</div>
-
+{{< pablostats >}}
 
 #### My life, in brief…
 

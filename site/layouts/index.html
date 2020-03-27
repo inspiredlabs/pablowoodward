@@ -5,13 +5,13 @@
 	<div id=carousel class="carousel fixed h-100 w-100 top-0 left-0">
 		{{ $current := .Params.Name }}
 		{{ range .Pages.ByWeight }}
-		
+
 			{{/* .Render */}}
-			
+
 			<section class="carousel-cell scrollable {{/* if eq .Params.Name $current.Params.Name }} is-selected {{ end */}}" id="{{ .Params.name | lower | urlize }}">
-				<div class="h-100 overflow-y-scroll touch-scrolling">
+				<div class="h-100 overflow-y-scroll touch-scrolling"><!-- vh-100 -->
 					<article class="w-100 mt5 mb7 highlight pr3 pl3 tc">
-					
+
 						{{/*<!--header class="post-header">
 						<a id="blog-logo" href="{{ .Site.BaseURL}}">
 							{{ if .Site.Params.logo }}
@@ -24,22 +24,23 @@
 						<!--h1 class="post-title">{{ .Title }}</h1-->
 
 						<section class="measure mr-auto ml-auto f3 lh-copy pt3">
-              {{ .Content }}
+              
+              {{ partial "content.html" . }}
 
               {{/* range last 1 .Data.Pages */}}
               <!-- <span class="h7 disable-scrolling f6 gray">{{ with .Site.Copyright }}©{{ now.Format "2006"}}, <a href="https://inspiredlabs.co.uk">{{ . }}</a>{{ end }}</span> -->
               {{/* end */}}
 						</section>
-						
+
 						<!--footer class="post-footer">
-						
+
 						{{ if .Site.Author }}
 						<section class="author">
 							<h4>{{ .Site.Author.name}}</h4>
 							<p>{{ .Site.Author.bio }}</p>
 						</section>
 						{{ end }}
-						
+
 						</footer-->
 					</article>
 				</div>

@@ -1,0 +1,2 @@
+{{- $content := .Content | replaceRE "<a" "<a ondragstart='return false' class=''" -}}
+{{- $content | safeHTML -}}
