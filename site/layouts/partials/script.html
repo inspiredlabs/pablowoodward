@@ -44,32 +44,32 @@ removeIOSRubberEffect(document.querySelector(".scrollable"));</script-->
 
 
 
-<script>		
+<script>
 
 function initGroup() {
 	var init = document.querySelector('.button-group--cells').getElementsByTagName('button')[0];
-	init.classList.add('is-selected');		
+	init.classList.add('is-selected');
 };
 
-function removeHash() { 
+function removeHash() {
 	history.pushState("", document.title, window.location.pathname + window.location.search);
 }; // - from: https://stackoverflow.com/questions/1397329/how-to-remove-the-hash-from-window-location-url-with-javascript-without-page-r/5298684#5298684
 
 var carousel = document.querySelector('.carousel');
 var flkty = new Flickity( carousel, {
   prevNextButtons: false,
-  dragThreshold:72,//66  
+  dragThreshold:72,//66
   wrapAround: true,
   selectedAttraction: 0.2,// codepen.io/desandro/pen/aOyMam
   friction: 1,
-	//isInstant: true,		// https://codepen.io/desandro/pen/jzEOZq	  
-  pageDots: false,			  
+	//isInstant: true,		// https://codepen.io/desandro/pen/jzEOZq
+  pageDots: false,
   //resize: false,		// see: https://flickity.metafizzy.co/options.html#resize
   hash: true,
   on: {
 
     ready: function() {
-    
+
     	//Begin store
     	let uri = window.location.hash.substr(1);
     	let list = document.getElementsByTagName('button');
@@ -82,13 +82,13 @@ var flkty = new Flickity( carousel, {
 
     	// MATCH or not?
     	for (var i=0; i<list.length; i++) {
-    		let listItem = list[i].getAttribute('data-weight');  		    		
-    		
-    		if (uri !== listItem) {	  		    		
+    		let listItem = list[i].getAttribute('data-weight');
+
+    		if (uri !== listItem) {
 	    		//populated correctly, but not yet = move on
 	    		//DEBUG alert('not:' + listItem); //DEBUG
 	    		//populated wrong = sanitise
-	    		
+
     		} else if (uri == listItem) {
 	    		//Store
     			//DEBUG alert('this:' + listItem); //DEBUG
@@ -98,22 +98,22 @@ var flkty = new Flickity( carousel, {
     			//DEBUG alert(uri);//DEBUG
     			// 2047-06112019
     			initGroup();
-    			removeHash(); 
+    			removeHash();
     		}//if
 
-    		
+
     	}//for
-    	//bLazy.revalidate();;    	    	
+    	//bLazy.revalidate();;
     }//ready
   }//on
-  
+
 });
 
-// NEW:			
+// NEW:
 //			var utils = window.fizzyUIUtils;
 //			var cellsButtonGroup = document.querySelector('.button-group--cells');
 //			var cellsButtons = utils.makeArray( cellsButtonGroup.children );
-//			
+//
 //			// update buttons on select
 //			flkty.on( 'select', function() {
 //			  var previousSelectedButton = cellsButtonGroup.querySelector('.is-selected');
@@ -122,7 +122,7 @@ var flkty = new Flickity( carousel, {
 //			  selectedButton.classList.add('is-selected');
 //			  carousel.focus();
 //			});
-//			
+//
 //			// cell select
 //			cellsButtonGroup.addEventListener( 'click', function( event ) {
 //			  if ( !matchesSelector( event.target, '.button' ) ) {
@@ -131,7 +131,7 @@ var flkty = new Flickity( carousel, {
 //			  var index = cellsButtons.indexOf( event.target );
 //			  flkty.select( index );
 //			});
-			
+
 // PREVIOUS:
 var buttonGroup = document.querySelector('.button-group--cells');
 var buttons = buttonGroup.querySelectorAll('.button');
@@ -157,8 +157,8 @@ buttonGroup.addEventListener('click', function(event) {
 });
 </script>
 
-<script>	
-	
+<script>
+
 	// revalidate bLazy
 	var bLazy = new Blazy({
 		offset: 640,  //Loads 8px before visible: http://dinbror.dk/blog/blazy/
@@ -166,39 +166,39 @@ buttonGroup.addEventListener('click', function(event) {
 	    updateCounter();
 	  }
 	});
-	
+
 	// debugInfo
 	var imageLoaded = 0;
 	var eleCountLoadedImages = document.getElementById('debugInfo');
-	
+
 	function updateCounter() {
 	  imageLoaded++;
 	  eleCountLoadedImages.innerHTML = imageLoaded;
 	}
-	
+
 </script>
 <script>
-  
+
   /*
   (function(){
 
     let section = document.querySelectorAll("section");
-    
+
     section.forEach(function(elem) {
       elem.addEventListener("mouseover", retinaBounce);
       elem.addEventListener("touchstart", retinaBounce);
     });
-    
+
   })();
 
   */
-  
+
 	// https://stackoverflow.com/questions/40956717/how-to-addeventlistener-to-multiple-elements-in-a-single-line:
 	// elementsArray.forEach(el => el.addEventListener('input', functionThatDoesStuff))
-	
+
 
 (function(){
-	
+
 	//https://stackoverflow.com/questions/4917664/detect-viewport-orientation-if-orientation-is-portrait-display-alert-message-ad
 	const debounce = (func, wait, immediate) => {
 		var timeout;
@@ -214,32 +214,32 @@ buttonGroup.addEventListener('click', function(event) {
 			if (callNow) func.apply(context, args);
 		};
 	};
-	
-	
+
+
 	function orient() {
-		
-    function layoutBounce() { 	
+
+    function layoutBounce() {
       let number = Math.floor((Math.random()*100));
       setTimeout(function(){ flkty.resize(); }, number);
     };
-    
+
     if (window.innerHeight > window.innerWidth) {
 			//alert('portrait');
 			layoutBounce()
 		} else {
 			//alert('landscape');
 			layoutBounce()
-		}//if	
+		}//if
 
 	}//orient
-	
+
 	// Listen for orientation changes
 //	window.addEventListener("orientationchange", function() {
 //	  orient();
 //	}, false);
 
 	window.addEventListener('orientationchange', () => orient(), false);
-	
+
 	// Listen for resize changes
 //	window.addEventListener("resize", function() {
 //	  orient();
@@ -247,7 +247,7 @@ buttonGroup.addEventListener('click', function(event) {
 
 	window.addEventListener('resize', debounce(() => orient(),
 	200, false), false);
-	
+
 })();
 
 </script>
@@ -267,7 +267,7 @@ var flickity = new Flickity( altCarousel, {
   prevNextButtons: false,
   dragThreshold:3,//66
   wrapAround: true,
-  pageDots: false,			  
+  pageDots: false,
   autoPlay: 100
 });
 
@@ -297,7 +297,7 @@ toggleButton.addEventListener( 'click', function() {
           transform: scale(0.75) translateY(3.2rem);
   opacity: .3;
 }
-  
+
   @-webkit-keyframes loaded {
   0% {
     -webkit-transform: scale(0.75) translateY(3.2rem);
@@ -375,8 +375,8 @@ toggleButton.addEventListener( 'click', function() {
   function onEntry(entry) {
     entry.forEach((change) => {
       if (change.isIntersecting) {
-        
-        
+
+
         (function(){
           var iframe = document.getElementsByTagName('iframe');
           for (var i=0; i<iframe.length; i++) {
@@ -425,7 +425,16 @@ toggleButton.addEventListener( 'click', function() {
   // Let's start UpUp with some basic settings
   UpUp.start({
     'content-url': 'index.html'
-    , 'assets': ['img/JC1.jpg', 'img/2015G.jpg', 'img/2015L.jpg', 'img/M55128.0122.jpg']
+    , 'assets': ['img/JC1.jpg'
+		, 'img/2015G.jpg'
+		, 'img/2015L.jpg'
+		, 'img/M55128.0122.jpg'
+		, 'https://pablowoodward.com/js/flickity.min.css'
+		, 'https://pablowoodward.com/js/flickity.pkgd.min.js'
+		, 'https://pablowoodward.com/js/hash.min.js'
+		, 'favicon.ico'
+		, 'favicon.png'
+		]
     //, 'cache-version': 'v1'
   });
 
