@@ -1,6 +1,6 @@
 enableRobotsTXT = true
 # baseurl = "./" # local only
-baseurl = "https://pablowoodward.com/" #{{ .Site.BaseURL }} "/" && netlify
+baseurl = "https://pablowoodward.netlify.app/" #{{ .Site.BaseURL }} "/" && netlify
 # relativeURLs = "true" #https://github.com/gohugoio/hugo/issues/985
 languageCode = "en" #Initial configuration reset #languageCode = "en-us"
 title = "Pablo Woodward"
@@ -19,7 +19,7 @@ disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
   keywords = ["Actor", "Presenter", "Comedian", "Kids Entertainer", "Childrens Entertainer", "2016 DBS Certified", "UK Equity Member", "AUS MEAA Member", "The Royal Opera", "theatre", "Brighton", "London", "culture", "The Disco Bunny", "Kasabian", "energetic", "Latino", "Latin American", "Black", "Mixed Race", "multilingual", "Latino" ]
   description = """Ethnically ambiguous probable Latino. Insatiable energy to explore, adventure & learn. Bold Linguistic Artist Extraordinaire!""" #<160 thing for SERP
   SiteDescription = "UK Equity Member | AUS MEAA Member"
-  
+
   #linkedin = "theurbanaut"
   #cover = "/img/background-cover.jpg"
 
