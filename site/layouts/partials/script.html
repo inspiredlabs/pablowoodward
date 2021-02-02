@@ -429,13 +429,14 @@ toggleButton.addEventListener( 'click', function() {
 		, 'img/2015G.jpg'
 		, 'img/2015L.jpg'
 		, 'img/M55128.0122.jpg'
-		, 'https://pablowoodward.com/js/flickity.min.css'
-		, 'https://pablowoodward.com/js/flickity.pkgd.min.js'
-		, 'https://pablowoodward.com/js/hash.min.js'
+		, '{{ .Site.BaseURL }}js/flickity.min.css'
+		, '{{ .Site.BaseURL }}js/flickity.pkgd.min.js'
+		, '{{ .Site.BaseURL }}js/hash.min.js'
 		, 'favicon.ico'
 		, 'favicon.png'
 		]
     //, 'cache-version': 'v1'
+		//{{ .Site.BaseURL }} = `https://pablowoodward.netlify.app/`
   });
 
 
